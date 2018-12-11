@@ -1,0 +1,149 @@
+
+/*页面不同宽度*/
+
+.cw1180{
+  width: 1180px;
+  margin: 0 auto;
+}
+.cw1722{
+  width: 1722px;
+  margin: 0 auto;
+}
+.cw1137{
+  width: 1173px;
+  margin: 0 auto;
+}
+
+/*导航栏*/
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 122px;
+  text-align: center;
+}
+.nav-list .item{
+  display: inline-block;
+  width: 80px;
+  line-height: 122px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.nav-list .item.active{
+  border-top: 3px solid #fff;
+}
+.nav-list .logo {
+  display: inline-block;
+  margin: 0 56px;
+}
+
+/*第一屏*/
+.section1{
+  height: 100%;
+  background: url("../images/index-bg.png") 0 0 no-repeat;
+  background-size: 100% 100%;
+}
+
+/*第二屏*/
+.section2{
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-top: 140px;
+  background-color: aquamarine;
+
+}
+.section-first{
+  text-align: center;
+}
+.title-wrap{
+  color: #0778f8;
+}
+.title-wrap .title{
+  line-height: 63px;
+  letter-spacing: 1px;
+  font-size: 36px;
+}
+.title-tip{
+  position: relative;
+  font-size: 14px;
+}
+.title-tip:after,
+.title-tip:before{
+  position: absolute;
+  top: 10px;
+  display: block;
+  content: '';
+  width: 125px;
+  height: 2px;
+  background-color: #0778f8;
+}
+.title-tip:after{
+  left: 12px;
+
+}
+.title-tip:before{
+  right: 12px;
+}
+.content{
+  margin-top: 48px;
+  line-height: 40px;
+  font-size: 24px;
+  color: #303030;
+}
+.section2-second{
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  position: absolute;
+  left: calc((100% - 1722px) / 2);
+  bottom: 0;
+}
+.section2-second .item{
+  position: relative;
+  flex: 1;
+  height: 345px;
+  padding: 24px 118px 24px 42px;
+  letter-spacing: 1px;
+  color: #fff;
+}
+.section2-second .item:first-child{
+  background:  url("../images/icon-bg1.png") calc(100% - 13px) calc(100% - 25px) no-repeat #2f5ffc;
+}
+.section2-second .item:nth-child(2){
+  background:  url("../images/icon-bg2.png") calc(100% - 21px) calc(100% - 23px) no-repeat #5179fc;
+
+}
+.section2-second .item:last-child{
+  background:  url("../images/icon-bg3.png") calc(100% - 18px) calc(100% - 22px) no-repeat #7897fc;
+
+}
+.section2-second h3{
+  line-height: 54px;
+  font-size: 36px;
+
+  font-weight: normal;
+}
+.section2-second .line{
+  width: 71px;
+  height: 5px;
+  background-color: #fff;
+}
+.section2-second p{
+  width: 426px;
+  position: absolute;
+  bottom: 54px;
+  line-height: 47px;
+  font-size: 24px;
+}
+
+
+/*第三屏*/
+.section3{
+  width: 100%;
+  background-color: #323b42;
+}
