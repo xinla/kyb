@@ -6,7 +6,23 @@ $(function(){
         navigationColor:'#f00',
     });
 
+    $('.section3 .item').each(function () {
+        $(this).hover(function () {
+            $(this).addClass("animated rubberBand")
+        },function () {
+            $(this).removeClass("animated rubberBand")
+        })
+    });
+    $('.section5 .item-bg').each(function () {
+        $(this).hover(function () {
+            $(this).addClass("animated pulse active")
+        },function () {
+            $(this).removeClass("animated pulse active ")
+        });
+    })
+
 });
+
 
 certifySwiper = new Swiper('#certify .swiper-container', {
     watchSlidesProgress: true,

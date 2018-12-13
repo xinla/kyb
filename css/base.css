@@ -204,6 +204,20 @@
   position: relative;
   padding: 15px 18px;
   background-color: #fff;
+  transition: all .5s;
+}
+.section5 .item-bg.active{
+  background-color: #1e75f9;
+  color: #fff;
+}
+.section5 .item-bg.active .item-more{
+  background-image: url("../images/icon-arrow-active.png");
+}
+.section5 .item-bg.active .triangle-left{
+  border-right-color: #1e75f9;
+}
+.section5 .item-bg.active .triangle-right{
+  border-left-color: #1e75f9;
 }
 .section5 h2{
   line-height: 24px;
@@ -237,6 +251,7 @@
   display: inline-block;
   width: 0;
   height: 0;
+  transition: all .5s;
 }
 .triangle-left{
   left: -25px;
