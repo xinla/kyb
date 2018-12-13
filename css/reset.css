@@ -55,6 +55,7 @@ body::before{ width: 100%;height: 100%;content:'';position: fixed;z-index: -1;to
 a,button,input,textarea{ -webkit-tap-highlight-color:rgba(0,0,0,0);}
 禁用长按页面时的弹出菜单(iOS下有效) ,img和a标签都要加
 img,a{-webkit-touch-callout:none;}  */
+/*init end*/
 
 /* common class */
 /* .iconfont{font-size: inherit;}
@@ -144,5 +145,31 @@ img,a{-webkit-touch-callout:none;}  */
 }
 .clearfix:after,.clearfix:before{content:"";display:table;/*创建匿名的表格单元，触发bfc*/}
 .clearfix:after{clear:both;/*清除浮动*/}
+.cb{clear: both;}
 
-/*init end*/
+/*导航栏*/
+nav{
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  width: 100%;
+  height: 122px;
+  text-align: center;
+}
+.nav-list .item{
+  display: inline-block;
+  width: 80px;
+  line-height: 122px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: #fff;
+}
+.nav-list .item.active{
+  border-top: 3px solid #fff;
+}
+.nav-list .logo {
+  display: inline-block;
+  margin: 0 56px;
+}
