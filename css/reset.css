@@ -148,6 +148,7 @@ img,a{-webkit-touch-callout:none;}  */
 .cb{clear: both;}
 
 /*导航栏*/
+/*
 nav{
   position: fixed;
   top: 0;
@@ -172,4 +173,4 @@ nav{
 .nav-list .logo {
   display: inline-block;
   margin: 0 56px;
-}
+}*/

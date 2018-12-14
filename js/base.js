@@ -8,9 +8,9 @@ $(function(){
 
     $('.section3 .item').each(function () {
         $(this).hover(function () {
-            $(this).addClass("animated rubberBand")
+            $(this).addClass("animated pulse active")
         },function () {
-            $(this).removeClass("animated rubberBand")
+            $(this).removeClass("animated pulse active")
         })
     });
     $('.section5 .item-bg').each(function () {

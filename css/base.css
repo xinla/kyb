@@ -1,3 +1,6 @@
+@charset "utf-8";
+
+/*组件css样式*/
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
 #fp-nav ul li:hover a.active span,
@@ -5,55 +8,41 @@
   background-color: #0778f8;
 }
 
-/*公共样式*/
-
+/*首页公共css*/
 .section h1{
   font-size: 36px;
 }
 .section span.title-tip{
   font-size: 18px;
 }
-.section{
+.section {
   width: 100%;
   height: 100%;
   position: relative;
-  overflow: hidden;
 }
-
-/*第一屏*/
-.section1{
-  background: url("../images/index-bg.png") 0 0 no-repeat;
-  background-size: 100% 100%;
-}
-.nav-list{
-  text-align: center;
-}
-.nav-item{
-  display: inline-block;
-  width: 80px;
-  line-height: 122px;
-  font-size: 16px;
-  color: #fff;
-}
-.nav-item.active{
-  border-top: 3px solid #fff;
-}
-.nav-logo{
-  margin: 0 56px;
-}
-
-/*.第二屏*/
-.section2{
+.section2,.section3{
   padding-top: 140px;
-
 }
-.title-wrap{
+.section4,.section5{
+  padding-top: 100px;
+}
+
+.section2 .title-wrap,
+.section4 .title-wrap,
+.section5 .title-wrap{
   color: #0778f8;
   text-align: center;
 }
-.title-wrap .title{
+.section2 .title-wrap .title,
+.section4 .title-wrap .title,
+.section5 .title-wrap .title{
   line-height: 63px;
   letter-spacing: 1px;
+}
+.section3 .title-wrap,
+.message .title-wrap{
+  text-align: center;
+  color: #fff;
 }
 .title-tip{
   position: relative;
@@ -75,242 +64,57 @@
 .title-tip:before{
   right: 12px;
 }
-.section2 .content-wrap{
-  margin-top: 48px;
-  line-height: 40px;
-  font-size: 24px;
-  text-indent: 2em;
-  color: #303030;
-}
-.show-wrap{
-  display: flex;
-  margin-top: 229px;
-}
-.show-wrap .item{
-  flex: 1;
-  height: 300px;
-  padding: 40px 30px;
-  letter-spacing: 1px;
-  color: #fff;
-}
-.show-wrap .item:first-child{
-  background:  url("../images/icon-bg1.png") calc(100% - 13px) calc(100% - 25px) no-repeat #2f5ffc;
-  background-size: 45%;
-}
-.show-wrap .item:nth-child(2){
-  background:  url("../images/icon-bg2.png") calc(100% - 21px) calc(100% - 23px) no-repeat #5179fc;
-  background-size: 50%;
-}
-.show-wrap .item:last-child{
-  background:  url("../images/icon-bg3.png") calc(100% - 18px) calc(100% - 22px) no-repeat #7897fc;
-  background-size: 50%;
-}
-.show-wrap .item h2{
-  line-height: 54px;
-  font-size: 32px;
-}
-.show-wrap .item .line{
-  width: 68px;
-  height: 4px;
-  background-color: #fff;
-}
-.show-wrap .item p{
-  padding-top: 70px;
-  font-size: 20px;
-}
 
-/*第三屏*/
-.section3{
-  padding-top: 140px;
-  background-color: #323b42;
+
+/*公共导航 | start*/
+.nav{
+  width: 100%;
+  height: 598px;
+  background-position: 0 0;
+  background-repeat: no-repeat;
 }
-.section3 .title-wrap h1,
-.section3 .title-wrap span{
-  color: #fff;
-}
-.section3 .content-wrap{
-  padding-top: 80px;
+.nav-list{
   text-align: center;
 }
-.section3 .item{
-  float: left;
-  width: 393px;
-  height: 268px;
-  border-radius: 10px;
-  background-color: #323b42;
-  color: #fff;
-}
-.section3 .icon{
+.nav-item{
   display: inline-block;
   width: 80px;
-  height: 80px;
-
-}
-.section3 .item:first-child .icon{
-  background: url("../images/icon-1.png") 0 0 no-repeat;
-}
-.section3 .item:nth-child(2) .icon{
-  background: url("../images/icon-2.png") 0 0 no-repeat;
-}
-.section3 .item:nth-child(3) .icon{
-  background: url("../images/icon-3.png") 0 0 no-repeat;
-}
-.section3 .item:nth-child(4) .icon{
-  background: url("../images/icon-4.png") 0 0 no-repeat;
-}
-.section3 .item:nth-child(5) .icon{
-  background: url("../images/icon-5.png") 0 0 no-repeat;
-}
-.section3 .item:last-child .icon{
-  background: url("../images/icon-6.png") 0 0 no-repeat;
-}
-.section3 .desc{
-  margin-top: 75px;
-}
-.section3 .desc h3{
-  line-height: 50px;
-  letter-spacing: 1px;
-  font-size: 24px;
-}
-
-/*第四屏*/
-.section4{
-  padding-top: 100px;
-}
-.section4 .content-wrap{
-  margin-top: 88px !important;
-}
-/*第五屏*/
-.section5{
-  padding-top: 100px;
-  background-color: #f2f4f3;
-}
-.section5 .content-wrap{
-  margin-top: 80px;
-}
-.section5 .item{
-  float: left;
-  width: 25%;
-  height: 295px;
-  color: #303030;
-}
-.section5 .item img{
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-.section5 .item-bg{
-  position: relative;
-  padding: 15px 18px;
-  background-color: #fff;
-  transition: all .5s;
-}
-.section5 .item-bg.active{
-  background-color: #1e75f9;
+  line-height: 122px;
+  font-size: 16px;
   color: #fff;
 }
-.section5 .item-bg.active .item-more{
-  background-image: url("../images/icon-arrow-active.png");
+.nav-item.active{
+  border-top: 3px solid #fff;
 }
-.section5 .item-bg.active .triangle-left{
-  border-right-color: #1e75f9;
-}
-.section5 .item-bg.active .triangle-right{
-  border-left-color: #1e75f9;
-}
-.section5 h2{
-  line-height: 24px;
-  font-size: 18px;
-}
-.section5 p{
-  margin-top: 20px;
-  line-height: 24px;
-  overflow:hidden;
-  text-overflow:ellipsis;
-  display:-webkit-box;
-  -webkit-box-orient:vertical;
-  -webkit-line-clamp:4;
-}
-.section5 .item-foot{
-  width: calc(100% - 36px);
-  position: absolute;
-  bottom: 15px;
-}
-.section5 .item-more{
-  display: block;
-  width: 22px;
-  height: 22px;
-  background: url("../images/icon-arrow.png") 0 0 no-repeat;
+.nav-logo{
+  margin: 0 56px;
 }
 
-.item-triangle{
-  position: absolute;
-  top: 50%;
-  margin-top: -25px;
-  display: inline-block;
-  width: 0;
-  height: 0;
-  transition: all .5s;
-}
-.triangle-left{
-  left: -25px;
-  border-top: 20px solid transparent;
-  border-right: 25px solid #fff;
-  border-bottom: 20px solid transparent;
-}
-.triangle-right{
-  right: -25px;
-  border-top: 20px solid transparent;
-  border-left: 25px solid #fff;
-  border-bottom: 20px solid transparent;
-}
+/*公共导航 | end*/
 
-/*第六屏*/
-.section6{
 
-}
+
+/*在线留言 | start*/
 .message{
   width: 100%;
-  height: 433px;
-  padding-top: 37px;
   text-align: center;
-  background: url("../images/msg-bg.png") 0 0 no-repeat;
   color: #fff;
-}
-.message .title-wrap h1,
-.message .title-wrap span{
-  color: #fff;
-}
-.message .title-wrap span{
-  letter-spacing: 4px;
 }
 .message .form-wrap{
   margin-top: 50px;
 }
-.message input::-webkit-input-placeholder,
-.message textarea::-webkit-input-placeholder{
-  color: #fff;
-}
-
 .message input{
   width: 582px;
   height: 50px;
   padding: 0 15px;
-  padding: 0 15px;
   border-radius: 8px;
-  border: 1px solid #fff;
-  color: #fff;
 }
 .message .form-desc{
   width: 100%;
-  height: 146px;
   padding: 12px;
   margin-top: 15px;
   resize: none;
   border-radius: 8px;
-  border: 1px solid #fff;
-  color: #fff;
 }
 .message .form-btn{
   display: inline-block;
@@ -325,40 +129,118 @@
   box-shadow:2px 6px 20px #495a70;
   color: #fff;
 }
-.section-footer{
-  height: calc(100% - 433px);
+
+/*在线留言 | end*/
+
+/*公共标题线条伪类样式 | start*/
+.publish-wrap{
+  padding: 80px 0;
+  background-color: #fff;
+}
+.publish-wrap .title-wrap{
+  margin-bottom: 72px;
+  text-align: center;
+}
+.publish-wrap .title-wrap h1{
+  font-weight: 700;
+  font-size: 30px;
+  letter-spacing: 1px;
+  color: #303030;
+}
+.publish-wrap .title-wrap span{
+  display: block;
+  position: relative;
+  color: #999;
+}
+.publish-wrap .title-wrap span:after,
+.publish-wrap .title-wrap span:before{
+  position: absolute;
+  top: 8px;
+  display: block;
+  content: "";
+  width: 43%;
+  height: 1px;
+  background-color: #999;
+}
+.publish-wrap .title-wrap span:before{
+  left: 0;
+}
+.publish-wrap .title-wrap span:after{
+  right: 0;
+}
+/*公共标题线条伪类样式 | end*/
+
+
+/*公司优势 | start*/
+.publish-item{
+  float: left;
+}
+.publish-item .icon{
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin: 20px auto;
+  text-align: center;
+}
+.publish-item:first-child .icon{
+  background: url("../images/icon-1.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item:nth-child(2) .icon{
+  background: url("../images/icon-2.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item:nth-child(3) .icon{
+  background: url("../images/icon-3.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item:nth-child(4) .icon{
+  background: url("../images/icon-4.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item:nth-child(5) .icon{
+  background: url("../images/icon-5.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item:last-child .icon{
+  background: url("../images/icon-6.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.publish-item .desc{
+  margin-top: 50px;
+}
+.publish-item .desc h3{
+  font-size: 24px;
+}
+/*公司优势 | end*/
+
+/*footer | start*/
+.footer{
   background-color: #303942;
   padding-top: 100px;
   color: #fff;
 }
-.section-footer dl{
+.footer dl{
   float: left;
 }
-
-.section-footer dt{
+.footer dt{
   line-height: 50px;
   letter-spacing: 1px;
-  font-size: 24px;
 }
-.section-footer dd{
+.footer dd{
   line-height: 24px;
   letter-spacing: 1px;
   color: #777777;
 }
-.section-footer dl.first{
+.footer dl.first{
   width: 277px;
   margin-right: 188px;
 }
-.section-footer dl.first{
-  width: 277px;
-  margin-right: 188px;
-}
-
-.section-footer dl.second{
+.footer dl.second{
   width: 147px;
   margin-right: 12px;
 }
-.section-footer .more{
+.footer .more{
   width: 50px;
   height: 20px;
   line-height: 20px;
@@ -369,22 +251,21 @@
   background-color: #f45105;
   color: #fff;
 }
-.section-footer .code{
+.footer .code{
   float: left;
   margin-right: 40px;
   text-align: center;
 }
-.section-footer .code:last-child{
+.footer .code:last-child{
   margin-right: 0;
 }
-.section-footer .code h4{
-  font-size: 16px;
+.footer .code h4{
   margin-bottom: 18px;
   font-weight: normal;
   letter-spacing: 2px;
   color: #fff;
 }
-.section-footer .code img{
+.footer .code img{
   display: block;
   width: 113px;
   height: 113px;
@@ -401,14 +282,63 @@
   margin-right: 16px;
 }
 .footer-copyRight{
-  position: absolute;
-  bottom: 0;
-  left: 0;
   width: 100%;
-  height: 60px;
-  line-height: 60px;
+  height: 40px;
+  line-height: 40px;
   text-align: center;
   font-size: 12px;
   background-color: #222e39;
   color: #777;
 }
+
+.publish-footer dd{
+  font-size: 12px;
+}
+.publish-footer .code h4{
+  font-size: 14px;
+}
+.section-footer{
+  height: calc(100% - 433px);
+}
+.section-footer dt{
+  font-size: 24px;
+}
+.section-footer .code h4{
+  font-size: 16px;
+}
+.section-footer .footer-copyRight{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/*footer | end*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

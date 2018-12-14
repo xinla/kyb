@@ -48,38 +48,38 @@ thead,tfoot{
 tbody tr {
     border-bottom: 1px solid #eee;
 }
-.section-footer{
+.footer{
   background-color: #303942;
   padding-top: 100px;
   color: #fff;
 }
-.section-footer dl{
+.footer dl{
   float: left;
 }
-.section-footer dt{
+.footer dt{
   line-height: 50px;
   letter-spacing: 1px;
 }
-.section-footer dd{
+.footer dd{
   line-height: 24px;
   letter-spacing: 1px;
   font-size: 12px;
   color: #777777;
 }
-.section-footer dl.first{
+.footer dl.first{
   width: 277px;
   margin-right: 188px;
 }
-.section-footer dl.first{
+.footer dl.first{
   width: 277px;
   margin-right: 188px;
 }
 
-.section-footer dl.second{
+.footer dl.second{
   width: 147px;
   margin-right: 12px;
 }
-.section-footer .more{
+.footer .more{
   width: 50px;
   height: 20px;
   line-height: 20px;
@@ -90,22 +90,22 @@ tbody tr {
   background-color: #f45105;
   color: #fff;
 }
-.section-footer .code{
+.footer .code{
   float: left;
   margin-right: 40px;
   text-align: center;
 }
-.section-footer .code:last-child{
+.footer .code:last-child{
   margin-right: 0;
 }
-.section-footer .code h4{
+.footer .code h4{
   font-size: 14px;
   margin-bottom: 18px;
   font-weight: normal;
   letter-spacing: 2px;
   color: #fff;
 }
-.section-footer .code img{
+.footer .code img{
   display: block;
   width: 113px;
   height: 113px;
