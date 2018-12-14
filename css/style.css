@@ -8,16 +8,60 @@
 }
 
 /*第二屏*/
+.section2{
+  padding-top: 50px;
+}
 .section2 .content-wrap{
   margin-top: 48px;
   line-height: 40px;
-  font-size: 24px;
+  /*font-size: 24px;*/
   text-indent: 2em;
   color: #303030;
 }
+.section2 .content-wrap .left{
+  width: 585px;
+}
+.section2 .content-wrap .left h3{
+  font-size: 24px;
+  color: #1d76f8;
+}
+
+.section2 .content-wrap .left p{
+  line-height: 25px;
+  font-size: 16px;
+}
+.section2 .content-wrap .left a{
+  display: block;
+  width: 130px;
+  height: 35px;
+  line-height: 35px;
+  margin-top: 50px;
+  background-color: #1e75fa;
+  color: #fff;
+}
+.section2 .content-wrap .left .more-icon{
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  position: relative;
+  left: 10px;
+  top: 2px;
+  background: url("../images/more.png") 0 0 no-repeat;
+  background-size: cover;
+}
+.section2 .content-wrap .right{
+  width: 402px;
+  height: 250px;
+}
+.section2 .content-wrap .right img{
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 .show-wrap{
   display: flex;
-  margin-top: 229px;
+  margin-top: 120px;
 }
 .show-wrap .item{
   flex: 1;
@@ -40,16 +84,16 @@
 }
 .show-wrap .item h2{
   line-height: 54px;
-  font-size: 32px;
+  font-size: 28px;
 }
 .show-wrap .item .line{
   width: 68px;
-  height: 4px;
+  height: 3px;
   background-color: #fff;
 }
 .show-wrap .item p{
   padding-top: 70px;
-  font-size: 20px;
+  font-size: 18px;
 }
 /*第三屏*/
 .section3{
