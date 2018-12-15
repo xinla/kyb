@@ -4,7 +4,9 @@
 /*第一屏*/
 .section1{
   background: url("../images/index-bg.png") 0 0 no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
+  -ms-behavior: url("../css/backgroundsize.min.htc");
+  behavior: url("../css/backgroundsize.min.htc");
 }
 
 /*第二屏*/
@@ -687,9 +689,9 @@
   border-bottom: 1px solid #e1e1e1;
   background-color: #fff;
 }
-.news-wrap .news-item.active,
-.news-wrap .news-item:hover{
+.news-wrap .news-item.active{
   background-color: #1e75f9;
+  border-color: transparent;
 }
 .news-wrap .news-item.active .news-time,
 .news-wrap .news-item.active .news-desc h4,
@@ -697,14 +699,6 @@
   color: #fff;
 }
 .news-wrap .news-item.active .news-desc a{
-  background-color: #000;
-}
-.news-wrap .news-item:hover .news-time,
-.news-wrap .news-item:hover .news-desc h4,
-.news-wrap .news-item:hover .news-desc p{
-  color: #fff;
-}
-.news-wrap .news-item:hover .news-desc a{
   background-color: #000;
 }
 .news-wrap .news-item:last-child{
