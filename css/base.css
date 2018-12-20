@@ -1,5 +1,10 @@
 @charset "utf-8";
 
+
+html,body{
+  min-width: 1180px;
+}
+
 /*组件css样式*/
 #fp-nav ul li a.active span,
 .fp-slidesNav ul li a.active span,
@@ -206,10 +211,14 @@
   background-size: cover;
 }
 .publish-item .desc{
-  margin-top: 50px;
+  margin-top: 30px;
+  padding: 0 20px
 }
 .publish-item .desc h3{
   font-size: 24px;
+}
+.publish-item span{
+  line-height: 24px;
 }
 /*公司优势 | end*/
 

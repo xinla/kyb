@@ -13,7 +13,7 @@
 
 #certify  .swiper-slide {
   width: 520px;
-  height: 408px;
+  height: 350px;
   background: #fff;
   box-shadow: 0 8px 30px #ddd;
 }
@@ -21,11 +21,12 @@
   display:block;
 }
 #certify  .swiper-slide p {
-  line-height: 98px;
+  line-height: 50px;
   padding-top: 0;
   text-align: center;
-  color: #636363;
-  font-size: 1.1em;
+  /*color: #636363;*/
+  font-weight: 700;
+  font-size: 1.2em;
   margin: 0;
 }
 

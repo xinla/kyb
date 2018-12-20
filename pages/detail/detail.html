@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>新闻详情</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=9,IE=10" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="Keywords" content="康有保，直击真相，揭秘，打假，寻亲，普法，打工，广场舞" />
+    <meta name="Description" content="安徽池州康有保网络科技有限公司[www.kangyoubao.net]，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+    <div class="nav detail-nav">
+        <nav class="nav-list">
+            <a href="../index/index.html" title="首页" class="nav-item">首页</a>
+            <a href="../aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
+            <a href="../product/product.html" title="产品中心" class="nav-item">产品中心</a>
+            <a href="../index/index.html" title="池州康有保网络科技有限公司" class="nav-logo">
+                <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+            </a>
+            <a href="../news/news.html" title="新闻中心" class="nav-item active">新闻中心</a>
+            <a href="../recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
+            <a href="../contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
+        </nav>
+    </div>
+        <div class="detail-wrap" id="detailMount">
+            <template>
+            <div class="cw">
+                <div class="title-wrap">
+                    <h3>{{detailObj.title}}</h3>
+                    <span>发布时间：{{detailObj.createtime}}</span>
+                </div>
+                <div class="content-wrap">
+                    <p>{{detailObj.content}}
+                    </p>
+                    <div class="detail-img">
+                        <img :src="fileRoot + detailObj.imagepath" alt="">
+                    </div>
+                </div>
+                <div class="detail-footer clearfix">
+                    <ul class="detail-list fl">
+                        <li v-if="noPrevNews">上一条：没有了...</li>
+                        <li v-if="hasPrevNews"><a href="javascript:void(0)" target="_blank" @click="handleDetail(prevObj)">上一条：{{prevObj.title}}</a></li>
+                        <li v-if="hasNextNews"><a href="javascript:void(0)" target="_blank" @click="handleDetail(nextObj)">下一条：{{nextObj.title}}</a></li>
+                        <li v-if="noNextNews">下一条：没有了...</li>
+                    </ul>
+                    <a href="../news/news.html" class="detail-return fr">返回列表</a>
+                </div>
+            </div>
+            </template>
+        </div>
+    <div class="footer publish-footer">
+        <div class="cw">
+            <div class="clearfix">
+                <div class="left fl clearfix">
+                    <dl class="first">
+                        <dt>康有保网络科技有限公司</dt>
+                        <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
+                        <dd class="more">
+                            <a href="../aboutUs/aboutUs.html">MORE</a>
+                        </dd>
+                    </dl>
+                    <dl class="second">
+                        <dt>关于我们</dt>
+                        <dd>
+                            <a href="../aboutUs/aboutUs.html">公司概况</a>
+                        </dd>
+                        <dd>
+                            <a href="../product/product.html">产品中心</a>
+                        </dd>
+                        <dd>
+                            <a href="../news/news.html">新闻中心</a>
+                        </dd>
+                        <dd>
+                            <a href="../recruit/recruit.html">诚聘英才</a>
+                        </dd>
+                    </dl>
+                    <dl class="third">
+                        <dt>联系我们</dt>
+                        <dd>电话：400-110-6768</dd>
+                        <dd>手机：186 5414 8698</dd>
+                        <dd>QQ ：1570728529</dd>
+                        <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
+                    </dl>
+                </div>
+                <div class="right fr clearfix">
+                  <!--  <div class="code">
+                        <h4>康有保手机官网</h4>
+                        <img src="../../images/code.png" alt="">
+                    </div>-->
+                    <div class="code">
+                        <h4>直击真相APP下载</h4>
+                        <img src="../../images/code.png" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="foot-partner">
+                <span>友情链接:</span>
+                <a href="javascript:void(0)">直击真相</a>
+                <a href="javascript:void(0)">央广网</a>
+                <a href="javascript:void(0)">环球网</a>
+                <a href="javascript:void(0)">北京晨报</a>
+                <a href="javascript:void(0)">法制晚报</a>
+                <a href="javascript:void(0)">新华社</a>
+                <a href="javascript:void(0)">凤凰网</a>
+                <a href="javascript:void(0)">海峡网</a>
+                <a href="javascript:void(0)">中国经济网</a>
+                <a href="javascript:void(0)">华尔街见闻</a>
+                <a href="javascript:void(0)">北青网</a>
+                <a href="javascript:void(0)">安徽网</a>
+                <a href="javascript:void(0)">新浪微博</a>
+                <a href="javascript:void(0)">知乎</a>
+            </div>
+        </div>
+        <div class="footer-copyRight">
+            康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
+        </div>
+    </div>
+    <script type="text/javascript" src="../../js/jquery.js"></script>
+    <script src="../../js/commonConfig.js"></script>
+    <script src="../../js/require.js"></script>
+    <script type="text/javascript">
+        $(function () {
+            require.config({baseUrl: "../../"});
+            require(["detail.js?a=" + new Date().getTime()], function() {});
+        });
+    </script>
+</body>
+</html>

@@ -5,8 +5,6 @@
 .section1{
   background: url("../images/index-bg.png") 0 0 no-repeat;
   background-size: cover;
-  -ms-behavior: url("../css/backgroundsize.min.htc");
-  behavior: url("../css/backgroundsize.min.htc");
 }
 
 /*第二屏*/
@@ -197,13 +195,13 @@
   transition: all .5s;
 }
 .triangle-left{
-  left: -25px;
+  left: -24px;
   border-top: 20px solid transparent;
   border-right: 25px solid #fff;
   border-bottom: 20px solid transparent;
 }
 .triangle-right {
-  right: -25px;
+  right: -24px;
   border-top: 20px solid transparent;
   border-left: 25px solid #fff;
   border-bottom: 20px solid transparent;
@@ -579,13 +577,17 @@
   height: 100%;
 }
 .aboutUs-second-item{
-  width: 210px !important;
-  height: 300px !important;
+  width: 276px !important;
+  height: 375px !important;
+  margin-right: 25px;
   padding: 0 15px;
   border-top:12px solid #303030;
   border-radius: 8px;
   text-align: center;
   background-color: #fff;
+}
+.aboutUs-second-item:last-child{
+  margin-right: 0;
 }
 .aboutUs-second-item .headPhoto{
   display: inline-block;
@@ -600,6 +602,7 @@
   width: 100%;
   height: 100%;
   border-radius: 50%;
+  object-fit: contain;
 }
 .aboutUs-second-item h4{
   position: relative;
@@ -623,7 +626,12 @@
   margin-top: 40px;
   text-align: left;
   line-height: 18px;
-  font-size: 12px;
+  font-size: 14px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 8;
   color: #303030;
 }
 .aboutUs-third .title-wrap span:after,
@@ -638,7 +646,6 @@
   height: 240px;
   margin-right: 83px;
   margin-bottom: 52px;
-  padding: 0 60px;
   text-align: center;
   border: 1px solid #bfbfbf;
   background-color: #fff;
@@ -712,7 +719,7 @@
   font-size: 48px;
 }
 .news-wrap .news-time span{
-  font-size: 12px;
+  font-size: 18px;
 }
 .news-wrap .news-img{
   width: 300px;
@@ -727,6 +734,10 @@
 }
 .news-wrap .news-desc{
   width: 424px;
+  height: 180px;
+  min-height: 180px;
+  overflow: hidden;
+  position: relative;
 }
 .news-wrap .news-desc h4{
   line-height: 24px;
@@ -746,6 +757,9 @@
   color: #4e4e4e;
 }
 .news-wrap .news-desc a{
+  position: absolute;
+  left: 0;
+  bottom: 0;
   display: inline-block;
   font-family: '宋体';
   padding: 8px 6px;
@@ -753,6 +767,7 @@
   background-color: #1e75f9;
   color: #fff;
 }
+/*
 .page{
   margin-top: 20px;
   text-align: center;
@@ -776,7 +791,81 @@
 .page .page-prev{
   margin-right: 17px;
 }
+*/
 
+.pagination{
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+.pagination>li{
+  display: inline-block;
+}
+.pagination>li>a, .pagination>li>span {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: #337ab7;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.pagination>li:first-child>a, .pagination>li:first-child>span {
+  margin-left: 0;
+  border-top-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+}
+.pagination a {
+  margin-right: 4px;
+}
+.pagination .page-fiter {
+  border: none;
+  margin-right: 0;
+  margin-left: -4px;
+}
+.pagination .page-fiter:hover {
+  background-color: transparent;
+  cursor: default;
+  border: none;
+  color: #337ab7;
+}
+.pagination .page-input{
+  padding: 0;
+  width: 35px;
+  margin-right: 4px;
+}
+.pagination .page-input input {
+  padding: 0;
+  text-align: center;
+}
+.form-control {
+  display: block;
+  width: 100%;
+  height: 34px;
+  padding: 6px 12px;
+  font-size: 14px;
+  line-height: 1.42857143;
+  color: #555;
+  background-color: #fff;
+  background-image: none;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+  -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s;
+  -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+  transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+}
+.pagination>.active>a, .pagination>.active>a:focus, .pagination>.active>a:hover, .pagination>.active>span, .pagination>.active>span:focus, .pagination>.active>span:hover {
+  z-index: 3;
+  color: #fff;
+  cursor: default;
+  background-color: #337ab7;
+  border-color: #337ab7;
+}
 /*新闻中心列表 | end*/
 
 

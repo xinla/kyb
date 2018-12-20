@@ -661,7 +661,7 @@
             container.addClass(WRAPPER);
             $('html').addClass(ENABLED);
 
-            //due to https://github.com/alvarotrigo/fullPage.js/issues/1502
+            //due to https://github.com/alvarotrigo/fullPage.../../js/issues/1502
             windowsHeight = $window.height();
 
             container.removeClass(DESTROYED); //in case it was destroyed before initilizing it again
@@ -2603,7 +2603,7 @@
 
         /**
         * Gets the pageX and pageY properties depending on the browser.
-        * https://github.com/alvarotrigo/fullPage.js/issues/194#issuecomment-34069854
+        * https://github.com/alvarotrigo/fullPage.../../js/issues/194#issuecomment-34069854
         */
         function getEventsPage(e){
             var events = [];
