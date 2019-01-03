@@ -1,36 +1,30 @@
 require.config({
-    waitSeconds: 0,
-    paths: {
-        "websiteService":"services/websiteService",
-        "Vue":"js/vue.min"
-    },
-    shim: {},
+	waitSeconds: 0,
+	paths: {
+		"websiteService":"services/websiteService",
+		"Vue":"js/vue.min"
+	},
+	shim: {},
 });
 define(["websiteService","Vue"], function(websiteService,Vue) {
-    var vm = new Vue ({
-        el:'#indexMount',
-        data:{
-            newsList:[],
-            fileRoot: CONST.fileRoot + '/',
-        },
-        mounted(){
-            this.$nextTick(()=>{
-                websiteService.getNewInformation(function(data){
-                    if(data && data.status == "success"){
-                        vm.newsList = data.recordList;
-                    }
-                });
+	var vm = new Vue ({
+	el:'#indexMount',
+	data:{
+		newsList:[],
+        fileRoot: CONST.fileRoot + '/',
+	},
+	mounted(){
+		this.$nextTick(()=>{
+            websiteService.getNewInformation(function(data){
+                if(data && data.status == "success"){
+                    vm.newsList = data.recordList;
+                }
             });
-        },
-        methods: {
-            handleDetail(item){
-                let jsonItem = encodeURIComponent(encodeURIComponent(JSON.stringify(item)));
-                window.location.href="pages/detail/detail.html?item="+jsonItem;
-            },
-        }
+        });
+	},
 
-    });
-    var vm1 = new Vue({
+});
+	var vm1 = new Vue({
         el:'#indexMount1',
         data:{
             msgObj:{
@@ -40,8 +34,8 @@ define(["websiteService","Vue"], function(websiteService,Vue) {
             }
         },
         methods:{
-
             handleSubmit(){
+                console.log(211)
                 // return;
                 if(!vm1.msgObj.membername){
                     alert("请输入会员名称");
@@ -79,7 +73,7 @@ define(["websiteService","Vue"], function(websiteService,Vue) {
     $(document).on("mousemove", ".item-bg",function () {
         $(this).addClass("animated pulse active")
     }).on("mouseout",".item-bg",function(){
-        $(this).removeClass("animated pulse active")
+    	$(this).removeClass("animated pulse active")
     })
 
 });
