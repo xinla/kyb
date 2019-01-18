@@ -7,7 +7,7 @@ require.config({
     shim: {},
 });
 define(["websiteService","Vue"], function(websiteService,Vue) {
-    var vm = new Vue ({
+    let vm = new Vue ({
         el:'#indexMount',
         data:{
             newsList:[],
@@ -30,7 +30,7 @@ define(["websiteService","Vue"], function(websiteService,Vue) {
         }
 
     });
-    var vm1 = new Vue({
+    let vm1 = new Vue({
         el:'#indexMount1',
         data:{
             msgObj:{
@@ -75,6 +75,22 @@ define(["websiteService","Vue"], function(websiteService,Vue) {
 
             },
         },
+    });
+    let vm2 = new Vue({
+        el:"#searchMount",
+        data:{
+            keyword:""
+        },
+        methods:{
+            search(keyword){
+                if(!keyword){
+                    alert('关键词不能为空');
+                    return;
+                }
+                let item = encodeURIComponent(encodeURIComponent(keyword));
+                window.open("pages/search/search.html?keyword="+item,"_blank");
+            }
+        }
     });
     $(document).on("mousemove", ".item-bg",function () {
         $(this).addClass("animated pulse active")

@@ -17,7 +17,60 @@
     <![endif]-->
 </head>
 <body>
-    <div class="nav news-nav">
+<div class="header" id="searchMount">
+    <div class="cw clearfix">
+        <div class="logo fl">
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+            </a>
+        </div>
+        <div class="search fr clearfix">
+            <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+            <div class="search-button fl" @click="search(keyword)">
+                <i class="iconfont">&#xe624;</i>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="nav-wrapper cw clearfix">
+        <ul class="nav-list clearfix fl">
+            <li class="nav-item">
+                <a href="../../index.html" title="首页" class="nav-item">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="../aboutUs/aboutUs.html" title="公司概况">公司概况</a>
+            </li>
+            <li class="nav-item product-item">
+                产品中心
+                <ul class="sub-nav">
+                    <li class="sub-nav-item">
+                        <a href="../product/product.html">直击真相</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a href="../product/videoCenter.html">广场舞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item active">
+                <a href="../news/news.html" title="新闻中心">新闻中心</a>
+            </li>
+            <li class="nav-item">
+                <a href="../recruit/recruit.html" title="诚聘英才">诚聘英才</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contactUs/contactUs.html" title="联系我们">联系我们</a>
+            </li>
+        </ul>
+        <div class="nav-login fr">
+            <a href="http://www.zjzx.xyz/#/login">登录</a>
+            <span>|</span>
+            <a href="http://www.zjzx.xyz/#/login">注册</a>
+        </div>
+    </div>
+</nav>
+<div class="banner news-banner"></div>
+   <!-- <div class="nav news-nav">
         <nav class="nav-list">
             <a href="../../index.html" title="首页" class="nav-item">首页</a>
             <a href="../aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
@@ -29,7 +82,7 @@
             <a href="../recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
             <a href="../contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
         </nav>
-    </div>
+    </div>-->
     <div class="news-wrap publish-wrap">
         <div class="cw">
             <div class="title-wrap">
@@ -143,6 +196,11 @@
     <script src="../../js/require.js"></script>
     <script type="text/javascript">
         $(function () {
+            $('.product-item').hover(function () {
+                $('.sub-nav').css('display','block');
+            },function () {
+                $('.sub-nav').css('display','none');
+            });
             require.config({baseUrl: "../../"});
             require(["news.js?a=" + new Date().getTime()], function() {});
         });

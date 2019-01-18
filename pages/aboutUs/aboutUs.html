@@ -18,7 +18,60 @@
     <![endif]-->
 </head>
 <body>
-    <div class="nav aboutUs-nav">
+<div class="header" id="searchMount">
+    <div class="cw clearfix">
+        <div class="logo fl">
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+            </a>
+        </div>
+        <div class="search fr clearfix">
+            <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+            <div class="search-button fl" @click="search(keyword)">
+                <i class="iconfont">&#xe624;</i>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="nav-wrapper cw clearfix">
+        <ul class="nav-list clearfix fl">
+            <li class="nav-item">
+                <a href="../../index.html" title="首页" class="nav-item">首页</a>
+            </li>
+            <li class="nav-item active">
+                <a href="../aboutUs/aboutUs.html" title="公司概况">公司概况</a>
+            </li>
+            <li class="nav-item product-item">
+                产品中心
+                <ul class="sub-nav">
+                    <li class="sub-nav-item">
+                        <a href="../product/product.html">直击真相</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a href="../product/videoCenter.html">广场舞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="../news/news.html" title="新闻中心">新闻中心</a>
+            </li>
+            <li class="nav-item">
+                <a href="../recruit/recruit.html" title="诚聘英才">诚聘英才</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contactUs/contactUs.html" title="联系我们">联系我们</a>
+            </li>
+        </ul>
+        <div class="nav-login fr">
+            <a href="http://www.zjzx.xyz/#/login">登录</a>
+            <span>|</span>
+            <a href="http://www.zjzx.xyz/#/login">注册</a>
+        </div>
+    </div>
+</nav>
+<div class="banner aboutUs-banner"></div>
+    <!--<div class="nav aboutUs-nav">
         <nav class="nav-list">
             <a href="../../index.html" title="首页" class="nav-item">首页</a>
             <a href="../aboutUs/aboutUs.html" title="公司概况" class="nav-item active">公司概况</a>
@@ -30,7 +83,7 @@
             <a href="../recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
             <a href="../contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
         </nav>
-    </div>
+    </div>-->
     <div class="aboutUs-wrap publish-wrap aboutUs-first">
         <div class="cw">
             <div class="title-wrap">
@@ -81,14 +134,14 @@
             </div>
             <ul class="content-wrap clearfix">
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe64f;</i>
                     <div class="desc">
                         <h3>核心优势</h3>
                         <span>独家平台，独家内容，独家报道。</span>
                     </div>
                 </li>
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe60b;</i>
                     <div class="desc">
                         <h3>爱心优势</h3>
                         <span>免费发布寻人寻亲广告，利用网络技术帮助失散人群，早日回家团圆。</span>
@@ -96,28 +149,28 @@
                 </li>
 
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe68c;</i>
                     <div class="desc">
                         <h3>团队优势</h3>
                         <span>团队有共同的使命愿景和价值观——让天下再也没有伤害！我们大家愿意终身而为奋斗。</span>
                     </div>
                 </li>
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe65b;</i>
                     <div class="desc">
                         <h3>产品优势</h3>
                         <span>关注社会，关心民生。传播正能量，社会价值高。</span>
                     </div>
                 </li>
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe615;</i>
                     <div class="desc">
                         <h3>服务优势</h3>
                         <span>开通服务热线，为用户解答迷惑。</span>
                     </div>
                 </li>
                 <li class="publish-item">
-                    <i class="icon"></i>
+                    <i class="icon iconfont">&#xe64e;</i>
                     <div class="desc">
                         <h3>分享优势</h3>
                         <span>让用户通过平台了解真相，相互分享。从此远离伤害！</span>
@@ -206,7 +259,11 @@
                     $(this).removeClass("animated pulse active")
                 })
             });
-
+            $('.product-item').hover(function () {
+                $('.sub-nav').css('display','block');
+            },function () {
+                $('.sub-nav').css('display','none');
+            });
             require.config({baseUrl: "../../"});
             require(["aboutUs.js?a=" + new Date().getTime()], function() {});
 

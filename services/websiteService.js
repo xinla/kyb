@@ -8,7 +8,7 @@ require.config({
 });
 define(["util"],function(util){
 	var controller = CONST.server+"/website"
-	
+
     var service = {};
 
 
@@ -28,7 +28,7 @@ define(["util"],function(util){
 	service.getNewInformation = function(call){
 		util.ajax(controller + '/getNewInformation',{},call)
 	};
-	
+
 	/*获取资讯分页*/
 
     service.getInformationPage = function(params,call){
@@ -41,6 +41,12 @@ define(["util"],function(util){
         })
     };
 
+    // 搜索资讯列表
+    service.searchInfoPage = function(page,size,keyword){
+        let params = {page,size,keyword};
+        let data  = util.ajaxAsync(controller+"/getInformationPage",params);
+        return data;
+    };
 
 
     /*获取新闻详情*/

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>康有保网络科技有限公司 | 搜索页</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=EmulateIE7,IE=9,IE=10" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link rel="shortcut icon" href="../../images/favicon.ico" type="image/x-icon" />
+    <meta name="Keywords" content="池州康有保，康有保，康有保网络，池州康有保网络科技有限公司，池州康有保网络官网，康有保直击真相app下载，直击真相下载" />
+    <meta name="Description" content="安徽池州康有保网络科技有限公司[www.kangyoubao.net]，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。" />
+    <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
+    <!--[if IE]>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div id="searchMount">
+    <div class="header">
+        <div class="cw clearfix">
+            <div class="logo fl">
+                <a href="../../index.html">
+                    <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+                </a>
+            </div>
+            <div class="search fr clearfix">
+                <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+                <div class="search-button fl" @click="handleSearch">
+                    <i class="iconfont">&#xe624;</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <template>
+    <div class="search-wrapper">
+        <div class="search-location">
+            <div class="cw">
+                <div class="keyword" v-show="keywordShow">
+                    关键字<span>"{{keyword}}"</span>搜索结果
+                </div>
+
+            </div>
+        </div>
+        <div class="search-container">
+            <div class="cw">
+                <ul class="search-list">
+                    <li class="search-item clearfix" v-for="item in searchResult">
+                        <a href="javascript:void(0)" target="_blank" @click="handleDetail(item)">
+                            <div class="search-img fl">
+                                <img :src="fileRoot + item.imagepath" alt="">
+                            </div>
+                            <div class="search-content fl">
+                                <h3 class="search-title">{{item.title}}</h3>
+                                <p class="search-desc">{{item.content}}</p>
+                                <div class="search-time">
+                                    {{item.createtime}}
+                                </div>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <div class="search-loading"  @click="search">{{searchTip}}</div>
+            </div>
+        </div>
+    </div>
+    </template>
+</div>
+<script src="../../js/jquery.js" charset="utf-8"></script>
+<script src="../../js/commonConfig.js"></script>
+<script src="../../js/require.js"></script>
+<script type="text/javascript">
+    $(function () {
+        require.config({baseUrl: "../../"});
+        require(["search.js?a=" + new Date().getTime()], function() {});
+
+    });
+
+</script>
+</body>
+</html>

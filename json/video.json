@@ -1,0 +1,68 @@
+{
+  "videoArr":[
+    {
+      "id":"1",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"今年最火32步《拥抱你的离去》原创附分解飞魅广场舞",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/6ace74a7-bde6-4b52-a461-a41559ff4870.jpg",
+      "url":"http://47.101.58.43:8085/video/5be24f4e-4e90-4754-b98a-7a6d2a296f11.mp4"
+    },
+    {
+      "id":"2",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"[广场舞金曲]歌曲《中国广场舞》演唱：正月十五",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/848fbe22-81a2-4ee7-aa37-91e8412edfa7.jpg",
+      "url":"http://47.101.58.43:8085/video/11dd485d-9f2b-4ecd-9938-b021b8a6ba99.mp4"
+    },
+    {
+      "id":"3",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"[广场舞金曲]歌曲《就爱广场舞》演唱：大庆小芳",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/e048a5d4-141c-4eaf-af46-af5e6ed9bbfd.jpg",
+      "url":"http://47.101.58.43:8085/video/49cee2e7-468e-411c-a33f-ce8fcc41ad5c.mp4"
+    },
+    {
+      "id":"4",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"[广场舞金曲]歌曲《火红的乌兰托娅》演唱：萨日朗",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/5448a566-948f-4446-90b4-48ccf17c6960.jpg",
+      "url":"http://47.101.58.43:8085/video/5688673a-6177-4e18-a5ef-275eb4f24f9d.mp4"
+    },
+    {
+      "id":"5",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"广场舞三-3",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/a722bcf5-882b-40e0-af68-02e8ed12182b.jpg",
+      "url":"http://47.101.58.43:8085/video/5a149e9d-8fc9-4400-89fb-1d6cd4682b86.mp4"
+    },
+    {
+      "id":"6",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"广场舞三-2",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/6119c3a2-5bb2-4d6e-9d44-957dc7b50632.jpg",
+      "url":"http://47.101.58.43:8085/video/440661d6-8da4-4bd1-a920-0b4575c5117d.mp4"
+    },
+    {
+      "id":"7",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"广场舞三-4",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/05256e55-af9b-4a1d-adc4-770ffc886f79.jpg",
+      "url":"http://47.101.58.43:8085/video/72b07395-ac8a-40ae-9627-c73b165bb6f5.mp4"
+    },
+    {
+      "id":"8",
+      "username":"视频达人",
+      "time":"2019-01-09 14:40",
+      "filename":"广场舞三-6",
+      "thumbnail":"http://47.101.58.43:8085/thumbnail/7966eebd-5a38-47ed-ae87-b7052e7a022b.jpg",
+      "url":"http://47.101.58.43:8085/video/247126ec-42fd-4d01-b3e7-894e01da9bcb.mp4"
+    }
+  ]
+}

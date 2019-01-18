@@ -9,6 +9,7 @@
     <meta name="Keywords" content="池州康有保，康有保，康有保网络，池州康有保网络科技有限公司，池州康有保网络官网，康有保直击真相app下载，直击真相下载" />
     <meta name="Description" content="安徽池州康有保网络科技有限公司[www.kangyoubao.net]，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。" />
     <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
     <!--[if IE]>
@@ -16,7 +17,68 @@
     <![endif]-->
 </head>
 <body>
-    <div class="nav product-nav">
+<div class="header" id="searchMount">
+    <div class="cw clearfix">
+        <div class="logo fl">
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+            </a>
+        </div>
+        <div class="search fr clearfix">
+            <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+            <div class="search-button fl" @click="search(keyword)">
+                <i class="iconfont">&#xe624;</i>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="nav-wrapper cw clearfix">
+        <ul class="nav-list clearfix fl">
+            <li class="nav-item">
+                <a href="../../index.html" title="首页" class="nav-item">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="../aboutUs/aboutUs.html" title="公司概况">公司概况</a>
+            </li>
+            <li class="nav-item product-item active">
+                产品中心
+                <ul class="sub-nav">
+                    <li class="sub-nav-item">
+                        <a href="../product/product.html">直击真相</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a href="../product/videoCenter.html">广场舞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="../news/news.html" title="新闻中心">新闻中心</a>
+            </li>
+            <li class="nav-item">
+                <a href="../recruit/recruit.html" title="诚聘英才">诚聘英才</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contactUs/contactUs.html" title="联系我们">联系我们</a>
+            </li>
+        </ul>
+        <div class="nav-login fr">
+            <a href="http://www.zjzx.xyz/#/login">登录</a>
+            <span>|</span>
+            <a href="http://www.zjzx.xyz/#/login">注册</a>
+        </div>
+    </div>
+</nav>
+<div class="banner product-banner">
+    <div class="nav-app cw">
+        <a href="http://www.kangyoubao.net/download.html" title="直击真相APP下载">
+            <h1>Mobile APP</h1>
+            <span>下载手机客户端</span>
+            <img src="../../images/download.png" alt="">
+        </a>
+    </div>
+</div>
+<!--    <div class="nav product-nav">
         <nav class="nav-list">
             <a href="../../index.html" title="首页" class="nav-item">首页</a>
             <a href="../aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
@@ -36,135 +98,149 @@
             </a>
 
         </div>
-    </div>
+    </div>-->
 
-    <div class="product-first">
-        <div class="product-first-wrap cw clearfix">
-            <div class="left fl">
-                <h2>直击真相网</h2>
-                <p>安徽池州康有保网络科技有限公司旗下的直击真相品牌，是一个思想教育为主的
-                    平台，专注揭秘、打假、防骗等，并设有寻亲和普法等栏目，公司以“多一个人
-                    看到，少一个人受骗”为理念。希望通过我们专业的水平和不懈的努力，让更多
-                    的用户在生活中、工作中提供一个辨别真假的服务体系。
-                </p>
+<div class="product-first">
+    <div class="product-first-wrap cw clearfix">
+        <div class="left fl">
+            <h2>直击真相网</h2>
+            <p>安徽池州康有保网络科技有限公司旗下的直击真相品牌，是一个思想教育为主的
+                平台，专注揭秘、打假、防骗等，并设有寻亲和普法等栏目，公司以“多一个人
+                看到，少一个人受骗”为理念。希望通过我们专业的水平和不懈的努力，让更多
+                的用户在生活中、工作中提供一个辨别真假的服务体系。
+            </p>
+        </div>
+        <div class="right fr">
+            <div class="img-bg">
+                <img src="../../images/phone.png" alt="直击真相APP">
             </div>
-            <div class="right fr">
-                <div class="img-bg">
-                    <img src="../../images/phone.png" alt="直击真相APP">
+        </div>
+    </div>
+</div>
+<div class="product-second">
+    <div class="cw">
+        <div class="title-wrap">
+            <h2>直击真相</h2>
+            <span>多一个人看到&nbsp;&nbsp;&nbsp;&nbsp;少一个人受骗</span>
+        </div>
+    </div>
+</div>
+
+<div class="product-third">
+    <div class="cw product-third-wrap">
+        <div class="title-wrap">
+            <h2>直击真相&nbsp;&nbsp;&nbsp;包罗万象</h2>
+            <span>给您打造一个随身携带的辨别真善伪的服务体系</span>
+        </div>
+        <ul class="content-wrap clearfix">
+            <li class="item">
+                <div class="item-btn">揭秘</div>
+                <span>揭开各行各业的套路和鲜为人知的秘密。</span>
+            </li>
+            <li class="item">
+                <div class="item-btn">防骗</div>
+                <span>让用户知道骗子的诈骗套路，不再受骗。</span>
+            </li>
+            <li class="item">
+                <div class="item-btn">打假</div>
+                <span>让用户了解假冒伪劣产品知识，不再上当。</span>
+            </li>
+            <li class="item">
+                <div class="item-btn">寻亲</div>
+                <span>和央视《等着我》栏目内容合作，免费发布寻人寻亲广告，帮助被拐卖的妇女和儿童早日回家团圆。</span>
+            </li>
+            <li class="item">
+                <div class="item-btn">普法</div>
+                <span>普及法律知识，让更多用户知法、懂法、利用法律来维护自身的安全利益。</span>
+            </li>
+            <li class="item">
+                <div class="item-btn">打工</div>
+                <span>提供就业信息，为无业者提供就业信息渠道。</span>
+            </li>
+        </ul>
+    </div>
+</div>
+
+<div class="footer publish-footer">
+    <div class="cw">
+        <div class="clearfix">
+            <div class="left fl clearfix">
+                <dl class="first">
+                    <dt>康有保网络科技有限公司</dt>
+                    <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
+                    <dd class="more">
+                        <a href="../aboutUs/aboutUs.html">MORE</a>
+                    </dd>
+                </dl>
+                <dl class="second">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <a href="../aboutUs/aboutUs.html">公司概况</a>
+                    </dd>
+                    <dd>
+                        <a href="../product/product.html">产品中心</a>
+                    </dd>
+                    <dd>
+                        <a href="../news/news.html">新闻中心</a>
+                    </dd>
+                    <dd>
+                        <a href="../recruit/recruit.html">诚聘英才</a>
+                    </dd>
+                </dl>
+                <dl class="third">
+                    <dt>联系我们</dt>
+                    <dd>电话：400-110-6768</dd>
+                    <dd>手机：186 5414 8698</dd>
+                    <dd>QQ ：1570728529</dd>
+                    <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
+                </dl>
+            </div>
+            <div class="right fr clearfix">
+                <!-- <div class="code">
+                     <h4>康有保手机官网</h4>
+                     <img src="../../images/code.png" alt="">
+                 </div>-->
+                <div class="code">
+                    <h4>直击真相APP下载</h4>
+                    <img src="../../images/code.png" alt="">
                 </div>
             </div>
         </div>
-    </div>
-    <div class="product-second">
-        <div class="cw">
-            <div class="title-wrap">
-                <h2>直击真相</h2>
-                <span>多一个人看到&nbsp;&nbsp;&nbsp;&nbsp;少一个人受骗</span>
-            </div>
+        <div class="foot-partner">
+            <span>友情链接:</span>
+            <a href="http://www.zjzx.xyz" target="_blank">直击真相</a>
+            <a href="http://www.cnr.cn/" target="_blank">央广网</a>
+            <a href="http://tv.cctv.com/lm/dzw/" target="_blank">央视网</a>
+            <a href="http://www.morningpost.com.cn/" target="_blank">北京晨报</a>
+            <a href="http://www.fawan.com/" target="_blank">法制晚报</a>
+            <a href="http://www.xinhuanet.com/" target="_blank">新华社</a>
+            <a href="https://news.ifeng.com/" target="_blank">凤凰网资讯</a>
+            <a href="http://www.hxnews.com/" target="_blank">海峡网</a>
+            <a href="http://www.ce.cn/" target="_blank">中国经济网</a>
+            <a href="https://wallstreetcn.com/" target="_blank">华尔街见闻</a>
+            <a href="http://www.ynet.com/index.html" target="_blank">北青网</a>
+            <a href="http://www.ahwang.cn/" target="_blank">安徽网</a>
+            <a href="https://weibo.com/" target="_blank">新浪微博</a>
+            <a href="https://www.zhihu.com" target="_blank">知乎</a>
         </div>
     </div>
-
-    <div class="product-third">
-        <div class="cw product-third-wrap">
-            <div class="title-wrap">
-                <h2>直击真相&nbsp;&nbsp;&nbsp;包罗万象</h2>
-                <span>给您打造一个随身携带的辨别真善伪的服务体系</span>
-            </div>
-            <ul class="content-wrap clearfix">
-               <li class="item">
-                   <div class="item-btn">揭秘</div>
-                   <span>揭开各行各业的套路和鲜为人知的秘密。</span>
-               </li>
-                <li class="item">
-                    <div class="item-btn">防骗</div>
-                    <span>让用户知道骗子的诈骗套路，不再受骗。</span>
-                </li>
-                <li class="item">
-                    <div class="item-btn">打假</div>
-                    <span>让用户了解假冒伪劣产品知识，不再上当。</span>
-                </li>
-                <li class="item">
-                    <div class="item-btn">寻亲</div>
-                    <span>和央视《等着我》栏目内容合作，免费发布寻人寻亲广告，帮助被拐卖的妇女和儿童早日回家团圆。</span>
-                </li>
-                <li class="item">
-                    <div class="item-btn">普法</div>
-                    <span>普及法律知识，让更多用户知法、懂法、利用法律来维护自身的安全利益。</span>
-                </li>
-                <li class="item">
-                    <div class="item-btn">打工</div>
-                    <span>提供就业信息，为无业者提供就业信息渠道。</span>
-                </li>
-            </ul>
-        </div>
+    <div class="footer-copyRight">
+        康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
     </div>
-
-    <div class="footer publish-footer">
-        <div class="cw">
-            <div class="clearfix">
-                <div class="left fl clearfix">
-                    <dl class="first">
-                        <dt>康有保网络科技有限公司</dt>
-                        <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
-                        <dd class="more">
-                            <a href="../aboutUs/aboutUs.html">MORE</a>
-                        </dd>
-                    </dl>
-                    <dl class="second">
-                        <dt>关于我们</dt>
-                        <dd>
-                            <a href="../aboutUs/aboutUs.html">公司概况</a>
-                        </dd>
-                        <dd>
-                            <a href="../product/product.html">产品中心</a>
-                        </dd>
-                        <dd>
-                            <a href="../news/news.html">新闻中心</a>
-                        </dd>
-                        <dd>
-                            <a href="../recruit/recruit.html">诚聘英才</a>
-                        </dd>
-                    </dl>
-                    <dl class="third">
-                        <dt>联系我们</dt>
-                        <dd>电话：400-110-6768</dd>
-                        <dd>手机：186 5414 8698</dd>
-                        <dd>QQ ：1570728529</dd>
-                        <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
-                    </dl>
-                </div>
-                <div class="right fr clearfix">
-                   <!-- <div class="code">
-                        <h4>康有保手机官网</h4>
-                        <img src="../../images/code.png" alt="">
-                    </div>-->
-                    <div class="code">
-                        <h4>直击真相APP下载</h4>
-                        <img src="../../images/code.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="foot-partner">
-                <span>友情链接:</span>
-                <a href="http://www.zjzx.xyz" target="_blank">直击真相</a>
-                <a href="http://www.cnr.cn/" target="_blank">央广网</a>
-                <a href="http://tv.cctv.com/lm/dzw/" target="_blank">央视网</a>
-                <a href="http://www.morningpost.com.cn/" target="_blank">北京晨报</a>
-                <a href="http://www.fawan.com/" target="_blank">法制晚报</a>
-                <a href="http://www.xinhuanet.com/" target="_blank">新华社</a>
-                <a href="https://news.ifeng.com/" target="_blank">凤凰网资讯</a>
-                <a href="http://www.hxnews.com/" target="_blank">海峡网</a>
-                <a href="http://www.ce.cn/" target="_blank">中国经济网</a>
-                <a href="https://wallstreetcn.com/" target="_blank">华尔街见闻</a>
-                <a href="http://www.ynet.com/index.html" target="_blank">北青网</a>
-                <a href="http://www.ahwang.cn/" target="_blank">安徽网</a>
-                <a href="https://weibo.com/" target="_blank">新浪微博</a>
-                <a href="https://www.zhihu.com" target="_blank">知乎</a>
-            </div>
-        </div>
-        <div class="footer-copyRight">
-            康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
-        </div>
-    </div>
+</div>
+<script type="text/javascript" src="../../js/jquery.js"></script>
+<script src="../../js/commonConfig.js"></script>
+<script src="../../js/require.js"></script>
+<script type="text/javascript">
+    $(function () {
+        $('.product-item').hover(function () {
+            $('.sub-nav').css('display','block');
+        },function () {
+            $('.sub-nav').css('display','none');
+        });
+        require.config({baseUrl: "../../"});
+        require(["product.js?a=" + new Date().getTime()], function() {});
+    });
+</script>
 </body>
 </html>

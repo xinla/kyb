@@ -12,9 +12,9 @@ code, kbd, pre, samp { font-family: courier new, courier, monospace; } /* 统一
 object, embed, video {  max-width: 100%; }
 a:link,a:active,a:visited,a:hover{ text-decoration: none; }
 table{ border-collapse: collapse;border-spacing: 0; }
-img { border: 0;max-width: 100%;vertical-align: middle; }/*解决父级底部多余空白*/ 
-small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */                                                                      
-fieldset{ border: 0; } 
+img { border: 0;max-width: 100%;vertical-align: middle; }/*解决父级底部多余空白*/
+small { font-size: 12px; } /* 小于 12px 的中文很难阅读，让 small 正常化 */
+fieldset{ border: 0; }
 li{ list-style: none; }
 a{ color:inherit; }
 /*click outline for firefox*/
@@ -40,7 +40,7 @@ input:-ms-input-placeholder,textarea:-ms-input-placeholder,input::-webkit-input-
 }
 *:not(input, select, textarea) { -webkit-user-select: none; }/*禁止选中文本内容*/
 
-::-webkit-scrollbar {display: none;/*隐藏滚轮*/}
+/*::-webkit-scrollbar {display: none;!*隐藏滚轮*!}*/
 /*phone*/
 /*给IOS系统里cursor不为pointer的元素添加事件时会不同程度受影响，加上cursor: pointer可解决*/
 /*  select,input[type=button], input[type=submit], input[type=file],input[type=checkbox],input[type=radio], button { cursor: pointer;}
@@ -92,7 +92,7 @@ img,a{-webkit-touch-callout:none;}  */
   bottom: 0;
   left: 0;
   margin: auto;
-  z-index: 999999; 
+  z-index: 999999;
 }
 /*center-center*/
 .cc{
@@ -133,7 +133,7 @@ img,a{-webkit-touch-callout:none;}  */
   cursor: pointer;
 }
 .oya{
-  overflow-y: auto; 
+  overflow-y: auto;
 }
 /* pc 外体框架 */
 .wrapper,.header-wrap{

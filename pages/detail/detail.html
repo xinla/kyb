@@ -9,6 +9,7 @@
     <meta name="Keywords" content="池州康有保，康有保，康有保网络，池州康有保网络科技有限公司，池州康有保网络官网，康有保直击真相app下载，直击真相下载" />
     <meta name="Description" content="安徽池州康有保网络科技有限公司[www.kangyoubao.net]，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。" />
     <link rel="stylesheet" type="text/css" href="../../css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/animate.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/base.css"/>
     <link rel="stylesheet" type="text/css" href="../../css/style.css"/>
     <!--[if IE]>
@@ -16,7 +17,60 @@
     <![endif]-->
 </head>
 <body>
-    <div class="nav detail-nav">
+<div class="header" id="searchMount">
+    <div class="cw clearfix">
+        <div class="logo fl">
+            <a href="../../index.html">
+                <img src="../../images/logo.png" alt="池州康有保网络科技有限公司">
+            </a>
+        </div>
+        <div class="search fr clearfix">
+            <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+            <div class="search-button fl" @click="search(keyword)">
+                <i class="iconfont">&#xe624;</i>
+            </div>
+        </div>
+    </div>
+</div>
+<nav class="nav">
+    <div class="nav-wrapper cw clearfix">
+        <ul class="nav-list clearfix fl">
+            <li class="nav-item">
+                <a href="../../index.html" title="首页" class="nav-item">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="../aboutUs/aboutUs.html" title="公司概况">公司概况</a>
+            </li>
+            <li class="nav-item product-item">
+                产品中心
+                <ul class="sub-nav">
+                    <li class="sub-nav-item">
+                        <a href="../product/product.html">直击真相</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a href="../product/videoCenter.html">广场舞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item active">
+                <a href="../news/news.html" title="新闻中心">新闻中心</a>
+            </li>
+            <li class="nav-item">
+                <a href="../recruit/recruit.html" title="诚聘英才">诚聘英才</a>
+            </li>
+            <li class="nav-item">
+                <a href="../contactUs/contactUs.html" title="联系我们">联系我们</a>
+            </li>
+        </ul>
+        <div class="nav-login fr">
+            <a href="http://www.zjzx.xyz/#/login">登录</a>
+            <span>|</span>
+            <a href="http://www.zjzx.xyz/#/login">注册</a>
+        </div>
+    </div>
+</nav>
+<div class="banner news-banner"></div>
+   <!-- <div class="nav detail-nav">
         <nav class="nav-list">
             <a href="../../index.html" title="首页" class="nav-item">首页</a>
             <a href="../aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
@@ -28,7 +82,7 @@
             <a href="../recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
             <a href="../contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
         </nav>
-    </div>
+    </div>-->
         <div class="detail-wrap" id="detailMount">
             <template>
             <div class="cw">
@@ -127,6 +181,11 @@
     <script src="../../js/require.js"></script>
     <script type="text/javascript">
         $(function () {
+            $('.product-item').hover(function () {
+                $('.sub-nav').css('display','block');
+            },function () {
+                $('.sub-nav').css('display','none');
+            });
             require.config({baseUrl: "../../"});
             require(["detail.js?a=" + new Date().getTime()], function() {});
         });

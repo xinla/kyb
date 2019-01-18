@@ -54,6 +54,22 @@ define(["websiteService","Vue"], function(websiteService,Vue) {
         },
 
     });
+    let vm1 = new Vue({
+        el:"#searchMount",
+        data:{
+            keyword:""
+        },
+        methods:{
+            search(keyword){
+                if(!keyword){
+                    alert("关键词不能为空");
+                    return;
+                }
+                let item = encodeURIComponent(encodeURIComponent(keyword))
+                window.open("../search/search.html?keyword="+item,"_blank");
+            }
+        }
+    });
 
 });
 

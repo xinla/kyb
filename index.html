@@ -9,6 +9,7 @@
     <meta name="Keywords" content="池州康有保，康有保，康有保网络，池州康有保网络科技有限公司，池州康有保网络官网，康有保直击真相app下载，直击真相下载" />
     <meta name="Description" content="安徽池州康有保网络科技有限公司[www.kangyoubao.net]，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。" />
     <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/fonts/iconfont.css"/>
     <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/certify.css">
     <link rel="stylesheet" type="text/css" href="css/animate.css"/>
@@ -18,560 +19,345 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
     <![endif]-->
 </head>
-<body>
-    <div class="nav home-nav">
-        <nav class="nav-list">
-            <a href="index.html" title="首页" class="nav-item active">首页</a>
-            <a href="pages/aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
-            <a href="pages/product/product.html" title="产品中心" class="nav-item">产品中心</a>
-            <a href="index.html" title="池州康有保网络科技有限公司" class="nav-logo">
+<body style="position: relative;">
+
+<div class="header" id="searchMount">
+    <div class="cw clearfix">
+        <div class="logo fl">
+            <a href="index.html">
                 <img src="images/logo.png" alt="池州康有保网络科技有限公司">
             </a>
-            <a href="pages/news/news.html" title="新闻中心" class="nav-item">新闻中心</a>
-            <a href="pages/recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
-            <a href="pages/contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
-        </nav>
+        </div>
+        <div class="search fr clearfix">
+            <input class="search-input fl" type="text" placeholder="请输入关键词~" v-model.trim="keyword">
+            <div class="search-button fl" @click="search(keyword)">
+                <i class="iconfont">&#xe624;</i>
+            </div>
+        </div>
     </div>
-    <div class="section section1">
-        <div class="cw">
+</div>
+<nav class="nav">
+    <div class="nav-wrapper cw clearfix">
+        <ul class="nav-list clearfix fl">
+            <li class="nav-item active">
+                <a href="index.html" title="首页">首页</a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/aboutUs/aboutUs.html" title="公司概况">公司概况</a>
+            </li>
+            <li class="nav-item product-item">
+                产品中心
+                <ul class="sub-nav">
+                    <li class="sub-nav-item">
+                        <a href="pages/product/product.html">直击真相</a>
+                    </li>
+                    <li class="sub-nav-item">
+                        <a href="pages/product/videoCenter.html">广场舞</a>
+                    </li>
+                </ul>
+            </li>
+            <li class="nav-item">
+                <a href="pages/news/news.html" title="新闻中心" >新闻中心</a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/recruit/recruit.html" title="诚聘英才" >诚聘英才</a>
+            </li>
+            <li class="nav-item">
+                <a href="pages/contactUs/contactUs.html" title="联系我们">联系我们</a>
+            </li>
+        </ul>
+        <div class="nav-login fr">
+            <a href="http://www.zjzx.xyz/#/login">登录</a>
+            <span>|</span>
+            <a href="http://www.zjzx.xyz/#/login">注册</a>
+        </div>
+    </div>
+</nav>
+<div class="banner index-banner"></div>
+<div class="section section1">
+    <div class="cw">
+        <div class="title-wrap">
+            <h1>公司概况</h1>
+            <span class="title-tip">●</span>
+        </div>
+        <div class="content-wrap clearfix">
+            <div class="left fl">
+                <h3>康有保网络科技有限公司</h3>
+                <p>
+                    安徽池州康有保网络科技有限公司，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。
+                </p>
+                <a href="pages/aboutUs/aboutUs.html" target="_blank">
+                    查看更多
+                    <i class="iconfont">&#xe641;</i>
+                </a>
+            </div>
+            <div class="right fr">
+                <img src="images/device.jpg" alt="直击真相App">
+            </div>
+        </div>
+        <div class="show-wrap clearfix">
+            <div class="item">
+                <h2>公司使命</h2>
+                <div class="line"></div>
+                <p>让天下再也没有伤害</p>
+            </div>
+            <div class="item">
+                <h2>公司愿景</h2>
+                <div class="line"></div>
+                <p>成为中国最有价值的公司</p>
+            </div>
+            <div class="item">
+                <h2>公司价值观</h2>
+                <div class="line"></div>
+                <p>客户第一、服务第一、诚信第一</p>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="section section2">
+    <div class="cw">
+        <div class="title-wrap">
+            <h1>公司优势</h1>
+            <span>The Company's Advantages</span>
+        </div>
+        <ul class="content-wrap clearfix">
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe64f;</i>
+                <div class="desc">
+                    <h3>核心优势</h3>
+                    <span>独家平台，独家内容，独家报道。</span>
+                </div>
+            </li>
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe60b;</i>
+                <div class="desc">
+                    <h3>爱心优势</h3>
+                    <span>免费发布寻人寻亲广告，利用网络技术帮助失散人群，早日回家团圆。</span>
+                </div>
+            </li>
+
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe68c;</i>
+                <div class="desc">
+                    <h3>团队优势</h3>
+                    <span>团队有共同的使命愿景和价值观——让天下再也没有伤害！我们大家愿意终身而为奋斗。</span>
+                </div>
+            </li>
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe65b;</i>
+                <div class="desc">
+                    <h3>产品优势</h3>
+                    <span>关注社会，关心民生。传播正能量，社会价值高。</span>
+                </div>
+            </li>
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe615;</i>
+                <div class="desc">
+                    <h3>服务优势</h3>
+                    <span>开通服务热线，为用户解答迷惑。</span>
+                </div>
+            </li>
+            <li class="publish-item">
+                <i class="icon iconfont">&#xe64e;</i>
+                <div class="desc">
+                    <h3>分享优势</h3>
+                    <span>让用户通过平台了解真相，相互分享。从此远离伤害！</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="section section3">
+    <div class="cw">
+        <div class="title-wrap">
             <div class="title-wrap">
-                <h1>公司概况</h1>
+                <h1>产品中心</h1>
                 <span class="title-tip">●</span>
             </div>
-            <div class="content-wrap clearfix">
-                <div class="left fl">
-                    <h3>康有保网络科技有限公司</h3>
-                    <p>
-                        安徽池州康有保网络科技有限公司，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。
-                    </p>
-                    <a href="pages/aboutUs/aboutUs.html" target="_blank">
-                        查看更多
-                        <i class="more-icon"></i>
-                    </a>
-                </div>
-                <div class="right fr">
-                    <img src="images/device.jpg" alt="直击真相App">
-                </div>
-            </div>
-            <div class="show-wrap clearfix">
-                <div class="item">
-                    <h2>公司使命</h2>
-                    <div class="line"></div>
-                    <p>让天下再也没有伤害</p>
-                </div>
-                <div class="item">
-                    <h2>公司愿景</h2>
-                    <div class="line"></div>
-                    <p>成为中国最有价值的公司</p>
-                </div>
-                <div class="item">
-                    <h2>公司价值观</h2>
-                    <div class="line"></div>
-                    <p>客户第一、服务第一、诚信第一</p>
-                </div>
-            </div>
         </div>
-    </div>
-    <div class="section section2">
-        <div class="cw">
-            <div class="title-wrap">
-                <h1>公司优势</h1>
-                <span>The Company's Advantages</span>
+        <div id="certify" class="content-wrap">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide"><img src="images/pro-img1.png" />
+                        <p style="color: #e42d26">直击真相</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img2.png" />
+                        <p style="color: #2658e4">揭秘</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img3.png" />
+                        <p style="color: #49a83d">打假</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img4.png" />
+                        <p style="color: #ee1cc0">寻亲</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img5.png" />
+                        <p style="color: #f86b3c">普法</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img6.png" />
+                        <p style="color: #c5a31b">打工</p>
+                    </div>
+                    <div class="swiper-slide"><img src="images/pro-img7.png" />
+                        <p style="color: #b60fff">广场舞</p>
+                    </div>
+                </div>
             </div>
-            <ul class="content-wrap clearfix">
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>核心优势</h3>
-                        <span>独家平台，独家内容，独家报道。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>公益寻亲</h3>
-                        <span>免费发布寻人寻亲信息，利用网络信息技术帮助失散人群，早日回家团圆。</span>
-                    </div>
-                </li>
+            <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
 
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>团队优势</h3>
-                        <span>团队有共同的使命愿景和价值观——让天下再也没有伤害！我们大家愿意终身而为奋斗。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>产品优势</h3>
-                        <span>关注社会，关心民生。传播正能量，社会价值高。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>服务优势</h3>
-                        <span>开通服务热线，为用户解答迷惑。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>分享优势</h3>
-                        <span>让用户通过平台了解真相，相互分享。从此远离伤害！</span>
-                    </div>
-                </li>
-            </ul>
         </div>
     </div>
-    <div class="section section3">
-        <div class="cw">
+</div>
+<div class="section section4" id="indexMount">
+    <div class="cw">
+        <div class="title-wrap">
             <div class="title-wrap">
-                <div class="title-wrap">
-                    <h1>产品中心</h1>
-                    <span class="title-tip">●</span>
-                </div>
-            </div>
-            <div id="certify" class="content-wrap">
-                <div class="swiper-container">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide"><img src="images/pro-img1.png" />
-                            <p style="color: #e42d26">直击真相</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img2.png" />
-                            <p style="color: #2658e4">揭秘</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img3.png" />
-                            <p style="color: #49a83d">打假</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img4.png" />
-                            <p style="color: #ee1cc0">寻亲</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img5.png" />
-                            <p style="color: #f86b3c">普法</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img6.png" />
-                            <p style="color: #c5a31b">打工</p>
-                        </div>
-                        <div class="swiper-slide"><img src="images/pro-img7.png" />
-                            <p style="color: #b60fff">广场舞</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-pagination"></div>
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>
-
-            </div>
-        </div>
-    </div>
-    <div class="section section4" id="indexMount">
-        <div class="cw">
-            <div class="title-wrap">
-                <div class="title-wrap">
-                    <h1>最新资讯</h1>
-                    <span class="title-tip">●</span>
-                </div>
-            </div>
-            <div class="content-wrap">
-                <template v-for='(item,index) in newsList' v-if='index < 2'>
-                    <div class="item">
-                        <img :src="fileRoot + item.imagepath">
-                    </div>
-                    <div class="item item-bg">
-                        <h2>{{item.title}}</h2>
-                        <p>{{item.content}}</p>
-                        <div class="item-foot clearfix">
-                            <span class="time fl">{{item.createtime}}</span>
-                            <a href="javascript:void(0)" target="_blank" class="item-more fr" @click="handleDetail(item)"></a>
-                        </div>
-                        <div class="item-triangle triangle-left"></div>
-                    </div>
-                </template>
-
-                <template v-for='(item,index) in newsList' v-if='index >= 2 && index < 4'>
-                    <div class="item item-bg">
-                        <h2>{{item.title}}</h2>
-                        <p>{{item.content}}</p>
-                        <div class="item-foot clearfix">
-                            <span class="time fl">{{item.createtime}}</span>
-                            <a href="javascript:void(0)" target="_blank" class="item-more fr" @click="handleDetail(item)"></a>
-                        </div>
-                        <div class="item-triangle triangle-right"></div>
-                    </div>
-                    <div class="item">
-                        <img :src="fileRoot + item.imagepath">
-                    </div>
-                </template>
-            </div>
-        </div>
-    </div>
-    <div class="section section5" id="indexMount1">
-        <div class="section-message message">
-            <div class="cw">
-                <div class="title-wrap">
-                    <h1>在线留言</h1>
-                    <span>Online message</span>
-                </div>
-                <div class="form-wrap">
-                    <template>
-                        <div class="form-input clearfix">
-                            <input type="text"  maxlength="15" placeholder="会员名称" class="fl" v-model="msgObj.membername" ref="membername" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')">
-                            <input type="tel"  maxlength="11" placeholder="手机号码" class="fr" v-model="msgObj.mobile" onkeyup="this.value=this.value.replace(/\D/g,'',)" onafterpaste="this.value=this.value.replace(/\D/g,'')" ref="mobile">
-                        </div>
-                        <textarea class="form-desc"  placeholder="留言内容：" v-model="msgObj.content" ref="content" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')"></textarea>
-                        <button type="submit" class="form-btn" @click="handleSubmit">提交</button>
-                    </template>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="footer publish-footer">
-        <div class="cw">
-            <div class="clearfix">
-                <div class="left fl clearfix">
-                    <dl class="first">
-                        <dt>康有保网络科技有限公司</dt>
-                        <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
-                        <dd class="more">
-                            <a href="../aboutUs/aboutUs.html">MORE</a>
-                        </dd>
-                    </dl>
-                    <dl class="second">
-                        <dt>关于我们</dt>
-                        <dd>
-                            <a href="../aboutUs/aboutUs.html">公司概况</a>
-                        </dd>
-                        <dd>
-                            <a href="../product/product.html">产品中心</a>
-                        </dd>
-                        <dd>
-                            <a href="../news/news.html">新闻中心</a>
-                        </dd>
-                        <dd>
-                            <a href="../recruit/recruit.html">诚聘英才</a>
-                        </dd>
-                    </dl>
-                    <dl class="third">
-                        <dt>联系我们</dt>
-                        <dd>电话：400-110-6768</dd>
-                        <dd>手机：186 5414 8698</dd>
-                        <dd>QQ ：1570728529</dd>
-                        <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
-                    </dl>
-                </div>
-                <div class="right fr clearfix">
-                    <!--  <div class="code">
-                          <h4>康有保手机官网</h4>
-                          <img src="../../images/code.png" alt="">
-                      </div>-->
-                    <div class="code">
-                        <h4>直击真相APP下载</h4>
-                        <img src="images/code.png" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="foot-partner">
-                <span>友情链接:</span>
-                <a href="http://www.zjzx.xyz" target="_blank">直击真相</a>
-                <a href="http://www.cnr.cn/" target="_blank">央广网</a>
-                <a href="http://tv.cctv.com/lm/dzw/" target="_blank">央视网</a>
-                <a href="http://www.morningpost.com.cn/" target="_blank">北京晨报</a>
-                <a href="http://www.fawan.com/" target="_blank">法制晚报</a>
-                <a href="http://www.xinhuanet.com/" target="_blank">新华社</a>
-                <a href="https://news.ifeng.com/" target="_blank">凤凰网资讯</a>
-                <a href="http://www.hxnews.com/" target="_blank">海峡网</a>
-                <a href="http://www.ce.cn/" target="_blank">中国经济网</a>
-                <a href="https://wallstreetcn.com/" target="_blank">华尔街见闻</a>
-                <a href="http://www.ynet.com/index.html" target="_blank">北青网</a>
-                <a href="http://www.ahwang.cn/" target="_blank">安徽网</a>
-                <a href="https://weibo.com/" target="_blank">新浪微博</a>
-                <a href="https://www.zhihu.com" target="_blank">知乎</a>
-            </div>
-        </div>
-        <div class="footer-copyRight">
-            康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
-        </div>
-    </div>
-
-<!--<div id="fullpage">
-    <div class="section section1">
-        <nav class="nav-list">
-            <a href="index.html" title="首页" class="nav-item active">首页</a>
-            <a href="pages/aboutUs/aboutUs.html" title="公司概况" class="nav-item">公司概况</a>
-            <a href="pages/product/product.html" title="产品中心" class="nav-item">产品中心</a>
-            <a href="index.html" title="池州康有保网络科技有限公司" class="nav-logo">
-                <img src="images/logo.png" alt="池州康有保网络科技有限公司">
-            </a>
-            <a href="pages/news/news.html" title="新闻中心" class="nav-item">新闻中心</a>
-            <a href="pages/recruit/recruit.html" title="诚聘英才" class="nav-item">诚聘英才</a>
-            <a href="pages/contactUs/contactUs.html" title="联系我们" class="nav-item">联系我们</a>
-        </nav>
-    </div>-->
-   <!-- <div class="section section2">
-        <div class="cw">
-            <div class="title-wrap">
-                <h1>公司概况</h1>
+                <h1>最新资讯</h1>
                 <span class="title-tip">●</span>
             </div>
-            <div class="content-wrap clearfix">
-                <div class="left fl">
-                    <h3>康有保网络科技有限公司</h3>
-                    <p>
-                        安徽池州康有保网络科技有限公司，专注于网络科技技术开发、转让、服务、咨询；市场调查；广告设计、制作、代理、发布；利用互联网经营网络文化产品；互联网信息服务；互联网娱乐应用服务平台；广播电视节目制作；网上销售产品；国际，国内贸易代理。
-                    </p>
-                    <a href="pages/aboutUs/aboutUs.html" target="_blank">
-                        查看更多
-                        <i class="more-icon"></i>
-                    </a>
-                </div>
-                <div class="right fr">
-                    <img src="images/device.jpg" alt="直击真相App">
-                </div>
-            </div>
-            <div class="show-wrap clearfix">
-                <div class="item">
-                    <h2>公司使命</h2>
-                    <div class="line"></div>
-                    <p>让天下再也没有伤害</p>
-                </div>
-                <div class="item">
-                    <h2>公司愿景</h2>
-                    <div class="line"></div>
-                    <p>成为中国最有价值的公司</p>
-                </div>
-                <div class="item">
-                    <h2>公司价值观</h2>
-                    <div class="line"></div>
-                    <p>客户第一、服务第一、诚信第一</p>
-                </div>
-            </div>
         </div>
-    </div>-->
-<!--  <div class="section section3">
+        <div class="content-wrap">
+            <template v-for='(item,index) in newsList' v-if='index < 2'>
+                <div class="item">
+                    <img :src="fileRoot + item.imagepath">
+                </div>
+                <div class="item item-bg">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.content}}</p>
+                    <div class="item-foot clearfix">
+                        <span class="time fl">{{item.createtime}}</span>
+                        <a href="javascript:void(0)" target="_blank" class="item-more iconfont fr" @click="handleDetail(item)">&#xe6ac;</a>
+                    </div>
+                    <div class="item-triangle triangle-left"></div>
+                </div>
+            </template>
+
+            <template v-for='(item,index) in newsList' v-if='index >= 2 && index < 4'>
+                <div class="item item-bg">
+                    <h2>{{item.title}}</h2>
+                    <p>{{item.content}}</p>
+                    <div class="item-foot clearfix">
+                        <span class="time fl">{{item.createtime}}</span>
+                        <a href="javascript:void(0)" target="_blank" class="item-more iconfont fr" @click="handleDetail(item)">&#xe6ac;</a>
+
+                    </div>
+                    <div class="item-triangle triangle-right"></div>
+                </div>
+                <div class="item">
+                    <img :src="fileRoot + item.imagepath">
+                </div>
+            </template>
+        </div>
+    </div>
+</div>
+<div class="section section5" id="indexMount1">
+    <div class="section-message message">
         <div class="cw">
             <div class="title-wrap">
-                <h1>公司优势</h1>
-                <span>The Company's Advantages</span>
+                <h1>在线留言</h1>
+                <span>Online message</span>
             </div>
-            <ul class="content-wrap clearfix">
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>核心优势</h3>
-                        <span>独家平台，独家内容，独家报道。</span>
+            <div class="form-wrap">
+                <template>
+                    <div class="form-input clearfix">
+                        <input type="text"  maxlength="15" placeholder="会员名称" class="fl" v-model="msgObj.membername" ref="membername" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')">
+                        <input type="tel"  maxlength="11" placeholder="手机号码" class="fr" v-model="msgObj.mobile" onkeyup="this.value=this.value.replace(/\D/g,'',)" onafterpaste="this.value=this.value.replace(/\D/g,'')" ref="mobile">
                     </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>爱心优势</h3>
-                        <span>免费发布寻人寻亲广告，利用网络技术帮助失散人群，早日回家团圆。</span>
-                    </div>
-                </li>
-
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>团队优势</h3>
-                        <span>团队有共同的使命愿景和价值观——让天下再也没有伤害！我们大家愿意终身而为奋斗。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>产品优势</h3>
-                        <span>关注社会，关心民生。传播正能量，社会价值高。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>服务优势</h3>
-                        <span>开通服务热线，为用户解答迷惑。</span>
-                    </div>
-                </li>
-                <li class="publish-item">
-                    <i class="icon"></i>
-                    <div class="desc">
-                        <h3>分享优势</h3>
-                        <span>让用户通过平台了解真相，相互分享。从此远离伤害！</span>
-                    </div>
-                </li>
-            </ul>
+                    <textarea class="form-desc"  placeholder="留言内容：" v-model="msgObj.content" ref="content" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')"></textarea>
+                    <button type="submit" class="form-btn" @click="handleSubmit">提交</button>
+                </template>
+            </div>
         </div>
-    </div>-->
-<!--   <div class="section section4">
-      <div class="cw">
-          <div class="title-wrap">
-              <div class="title-wrap">
-                  <h1>产品中心</h1>
-                  <span class="title-tip">●</span>
-              </div>
-          </div>
-          <div id="certify" class="content-wrap">
-              <div class="swiper-container">
-                  <div class="swiper-wrapper">
-                      <div class="swiper-slide"><img src="images/pro-img1.png" />
-                          <p style="color: #e42d26">直击真相</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img2.png" />
-                          <p style="color: #2658e4">揭秘</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img3.png" />
-                          <p style="color: #49a83d">打假</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img4.png" />
-                          <p style="color: #ee1cc0">寻亲</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img5.png" />
-                          <p style="color: #f86b3c">普法</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img6.png" />
-                          <p style="color: #c5a31b">打工</p>
-                      </div>
-                      <div class="swiper-slide"><img src="images/pro-img7.png" />
-                          <p style="color: #b60fff">广场舞</p>
-                      </div>
-                  </div>
-              </div>
-              <div class="swiper-pagination"></div>
-              <div class="swiper-button-prev"></div>
-              <div class="swiper-button-next"></div>
+    </div>
+</div>
+<div class="footer publish-footer">
+    <div class="cw">
+        <div class="clearfix">
+            <div class="left fl clearfix">
+                <dl class="first">
+                    <dt>康有保网络科技有限公司</dt>
+                    <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
+                    <dd class="more">
+                        <a href="../aboutUs/aboutUs.html">MORE</a>
+                    </dd>
+                </dl>
+                <dl class="second">
+                    <dt>关于我们</dt>
+                    <dd>
+                        <a href="../aboutUs/aboutUs.html">公司概况</a>
+                    </dd>
+                    <dd>
+                        <a href="../product/product.html">产品中心</a>
+                    </dd>
+                    <dd>
+                        <a href="../news/news.html">新闻中心</a>
+                    </dd>
+                    <dd>
+                        <a href="../recruit/recruit.html">诚聘英才</a>
+                    </dd>
+                </dl>
+                <dl class="third">
+                    <dt>联系我们</dt>
+                    <dd>电话：400-110-6768</dd>
+                    <dd>手机：186 5414 8698</dd>
+                    <dd>QQ ：1570728529</dd>
+                    <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
+                </dl>
+            </div>
+            <div class="right fr clearfix">
+                <!--  <div class="code">
+                      <h4>康有保手机官网</h4>
+                      <img src="../../images/code.png" alt="">
+                  </div>-->
+                <div class="code">
+                    <h4>直击真相APP下载</h4>
+                    <img src="images/code.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="foot-partner">
+            <span>友情链接:</span>
+            <a href="http://www.zjzx.xyz" target="_blank">直击真相</a>
+            <a href="http://www.cnr.cn/" target="_blank">央广网</a>
+            <a href="http://tv.cctv.com/lm/dzw/" target="_blank">央视网</a>
+            <a href="http://www.morningpost.com.cn/" target="_blank">北京晨报</a>
+            <a href="http://www.fawan.com/" target="_blank">法制晚报</a>
+            <a href="http://www.xinhuanet.com/" target="_blank">新华社</a>
+            <a href="https://news.ifeng.com/" target="_blank">凤凰网资讯</a>
+            <a href="http://www.hxnews.com/" target="_blank">海峡网</a>
+            <a href="http://www.ce.cn/" target="_blank">中国经济网</a>
+            <a href="https://wallstreetcn.com/" target="_blank">华尔街见闻</a>
+            <a href="http://www.ynet.com/index.html" target="_blank">北青网</a>
+            <a href="http://www.ahwang.cn/" target="_blank">安徽网</a>
+            <a href="https://weibo.com/" target="_blank">新浪微博</a>
+            <a href="https://www.zhihu.com" target="_blank">知乎</a>
+        </div>
+    </div>
+    <div class="footer-copyRight">
+        康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
+    </div>
+</div>
 
-          </div>
-      </div>
-  </div>-->
-<!--   <div class="section section5" id="indexMount">
-       <div class="cw">
-           <div class="title-wrap">
-               <div class="title-wrap">
-                   <h1>最新资讯</h1>
-                   <span class="title-tip">●</span>
-               </div>
-           </div>
-           <div class="content-wrap">
-               <template v-for='(item,index) in newsList' v-if='index < 2'>
-                   <div class="item">
-                       <img :src="fileRoot + item.imagepath">
-                   </div>
-                   <div class="item item-bg">
-                       <h2>{{item.title}}</h2>
-                       <p>{{item.content}}</p>
-                       <div class="item-foot clearfix">
-                           <span class="time fl">{{item.createtime}}</span>
-                           <a href="javascript:void(0)" target="_blank" class="item-more fr" @click="handleDetail(item)"></a>
-                       </div>
-                       <div class="item-triangle triangle-left"></div>
-                   </div>
-               </template>
+<div class="login-wrapper">
+    <div class="login-mask"></div>
+    <div class="login">
+        <div class="login-title clearfix">
+            <h3 class="fl">欢迎登录</h3>
+            <span class="fr">手机动态密码登录</span>
+        </div>
+        <div class="login-form">
+            <div class="login-item">
+                <input type="text" placeholder="用户名/邮箱/手机号">
+            </div>
+            <div class="login-item">
+                <input type="text">
+                <span class="iconfont">&#xe60b;</span>
+            </div>
+        </div>
+    </div>
 
-               <template v-for='(item,index) in newsList' v-if='index >= 2 && index < 4'>
-                   <div class="item item-bg">
-                       <h2>{{item.title}}</h2>
-                       <p>{{item.content}}</p>
-                       <div class="item-foot clearfix">
-                           <span class="time fl">{{item.createtime}}</span>
-                           <a href="javascript:void(0)" target="_blank" class="item-more fr" @click="handleDetail(item)"></a>
-                       </div>
-                       <div class="item-triangle triangle-right"></div>
-                   </div>
-                   <div class="item">
-                       <img :src="fileRoot + item.imagepath">
-                   </div>
-               </template>
-           </div>
-       </div>
-   </div>-->
-<!--   <div class="section section6" id="indexMount1">
-       <div class="section-message message">
-           <div class="cw">
-               <div class="title-wrap">
-                   <h1>在线留言</h1>
-                   <span>Online message</span>
-               </div>
-               <div class="form-wrap">
-                   <template>
-                       <div class="form-input clearfix">
-                           <input type="text"  maxlength="15" placeholder="会员名称" class="fl" v-model="msgObj.membername" ref="membername" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')">
-                           <input type="tel"  maxlength="11" placeholder="手机号码" class="fr" v-model="msgObj.mobile" onkeyup="this.value=this.value.replace(/\D/g,'',)" onafterpaste="this.value=this.value.replace(/\D/g,'')" ref="mobile">
-                       </div>
-                       <textarea class="form-desc"  placeholder="留言内容：" v-model="msgObj.content" ref="content" onkeyup="this.value=this.value.replace(/[^\u4e00-\u9fa5a-zA-Z0-9\w]/g,'')"></textarea>
-                       <button type="submit" class="form-btn" @click="handleSubmit">提交</button>
-                   </template>
-               </div>
-           </div>-->
-           <!--</div>
-          <div class="footer section-footer">
-              <div class="cw">
-                  <div class="clearfix">
-                      <div class="left fl clearfix">
-                          <dl class="first">
-                              <dt>康有保网络科技有限公司</dt>
-                              <dd>安徽池州康有保网络科技有限公司 旗下的直击真相品牌，是自主研发 的一个APP平台，主要面向全国的 手机用户，专注揭秘、打假、防骗！</dd>
-                              <dd class="more">
-                                  <a href="pages/aboutUs/aboutUs.html">MORE</a>
-                              </dd>
-                          </dl>
-                          <dl class="second">
-                              <dt>关于我们</dt>
-                              <dd>
-                                  <a href="pages/aboutUs/aboutUs.html">公司概况</a>
-                              </dd>
-                              <dd>
-                                  <a href="pages/product/product.html">产品中心</a>
-                              </dd>
-                              <dd>
-                                  <a href="pages/news/news.html">新闻中心</a>
-                              </dd>
-                              <dd>
-                                  <a href="pages/recruit/recruit.html">诚聘英才</a>
-                              </dd>
-                          </dl>
-                          <dl class="third">
-                              <dt>联系我们</dt>
-                              <dd>电话：400-110-6768</dd>
-                              <dd>手机：186 5414 8698</dd>
-                              <dd>QQ ：1570728529</dd>
-                              <dd>地址：安徽省池州市贵池区恒泰都市华庭17幢1904</dd>
-                          </dl>
-                      </div>
-                      <div class="right fr clearfix">
-                          &lt;!&ndash;   <div class="code">
-                              <h4>康有保手机官网</h4>
-                              <img src="images/code.png" alt="">
-                          </div>&ndash;&gt;
-                          <div class="code">
-                              <h4>直击真相APP下载</h4>
-                              <img src="images/code.png" alt="">
-                          </div>
-                      </div>
-                  </div>
-                  <div class="foot-partner">
-                      <span>友情链接:</span>
-                      <a href="javascript:void(0)">直击真相</a>
-                      <a href="javascript:void(0)">央广网</a>
-                      <a href="javascript:void(0)">环球网</a>
-                      <a href="javascript:void(0)">北京晨报</a>
-                      <a href="javascript:void(0)">法制晚报</a>
-                      <a href="javascript:void(0)">新华社</a>
-                      <a href="javascript:void(0)">凤凰网</a>
-                      <a href="javascript:void(0)">海峡网</a>
-                      <a href="javascript:void(0)">中国经济网</a>
-                      <a href="javascript:void(0)">华尔街见闻</a>
-                      <a href="javascript:void(0)">北青网</a>
-                      <a href="javascript:void(0)">安徽网</a>
-                      <a href="javascript:void(0)">新浪微博</a>
-                      <a href="javascript:void(0)">知乎</a>
-                  </div>
-              </div>
-              <div class="footer-copyRight">
-                  康有保网络科技有限公司 Copyright © 皖ICP备18025845号-1
-              </div>
-          </div>
-      </div>
-    </div>-->
+</div>
+
 <script src="js/jquery.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/swiper.min.js" type="text/javascript" charset="utf-8"></script>
 <script src="js/move.js" type="text/javascript" charset="utf-8"></script>
@@ -579,62 +365,67 @@
 <script src="js/commonConfig.js"></script>
 <script src="js/require.js"></script>
 <script type="text/javascript">
-  $(function() {
-      require.config({baseUrl: "./"});
-      require(["index.js?a=" + new Date().getTime()], function() {});
-      $('.section2 .publish-item').each(function() {
-          $(this).hover(function() {
-              $(this).addClass("animated pulse active")
-          }, function() {
-              $(this).removeClass("animated pulse active")
-          })
-      });
-  });
-  certifySwiper = new Swiper('#certify .swiper-container', {
-      watchSlidesProgress: true,
-      slidesPerView: 'auto',
-      centeredSlides: true,
-      loop: true,
-      loopedSlides: 5,
-      autoplay: true,
-      navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-      },
-      pagination: {
-          el: '.swiper-pagination',
-          //clickable :true,
-      },
-      on: {
-          progress: function(progress) {
-              for(var i = 0; i < this.slides.length; i++) {
-                  var slide = this.slides.eq(i);
-                  var slideProgress = this.slides[i].progress;
-                  var modify = 1;
-                  if(Math.abs(slideProgress) > 1) {
-                      modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
-                  }
-                  var translate = slideProgress * modify * 260 + 'px';
-                  var scale = 1 - Math.abs(slideProgress) / 5;
-                  var zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
-                  slide.transform('translateX(' + translate + ') scale(' + scale + ')');
-                  slide.css('zIndex', zIndex);
-                  slide.css('opacity', 1);
-                  if(Math.abs(slideProgress) > 3) {
-                      slide.css('opacity', 0);
-                  }
-              }
-          },
-          setTransition: function(transition) {
-              for(var i = 0; i < this.slides.length; i++) {
-                  var slide = this.slides.eq(i)
-                  slide.transition(transition);
-              }
+    $(function() {
+        require.config({baseUrl: "./"});
+        require(["index.js?a=" + new Date().getTime()], function() {});
+        $('.section2 .publish-item').each(function() {
+            $(this).hover(function() {
+                $(this).addClass("animated pulse active")
+            }, function() {
+                $(this).removeClass("animated pulse active")
+            })
+        });
+        $('.product-item').hover(function () {
+            $('.sub-nav').css('display','block');
+        },function () {
+            $('.sub-nav').css('display','none');
+        })
+    });
+    certifySwiper = new Swiper('#certify .swiper-container', {
+        watchSlidesProgress: true,
+        slidesPerView: 'auto',
+        centeredSlides: true,
+        loop: true,
+        loopedSlides: 5,
+        autoplay: true,
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        pagination: {
+            el: '.swiper-pagination',
+            //clickable :true,
+        },
+        on: {
+            progress: function(progress) {
+                for(var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i);
+                    var slideProgress = this.slides[i].progress;
+                    var modify = 1;
+                    if(Math.abs(slideProgress) > 1) {
+                        modify = (Math.abs(slideProgress) - 1) * 0.3 + 1;
+                    }
+                    var translate = slideProgress * modify * 260 + 'px';
+                    var scale = 1 - Math.abs(slideProgress) / 5;
+                    var zIndex = 999 - Math.abs(Math.round(10 * slideProgress));
+                    slide.transform('translateX(' + translate + ') scale(' + scale + ')');
+                    slide.css('zIndex', zIndex);
+                    slide.css('opacity', 1);
+                    if(Math.abs(slideProgress) > 3) {
+                        slide.css('opacity', 0);
+                    }
+                }
+            },
+            setTransition: function(transition) {
+                for(var i = 0; i < this.slides.length; i++) {
+                    var slide = this.slides.eq(i)
+                    slide.transition(transition);
+                }
 
-          }
-      }
+            }
+        }
 
-  });
+    });
 </script>
 </body>
 </html>
